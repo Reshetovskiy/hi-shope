@@ -1,0 +1,57 @@
+.footer {
+    &-mobile {
+        display: none;
+    }
+    background-color: black;
+    &__wrapper {
+        padding: 22px 0px 0 71px;
+        width: 1152px;
+        min-height: 295px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        ul {
+            li {
+                margin-bottom: 23.5px;
+                font-size: 14px;
+                color: white;
+                font-family: 'Roboto Regular';
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+    &__block {
+        &_last {
+            margin-right: 36px;
+            ul {
+                li {
+                    text-align: right;
+                }
+            }
+        }
+        &_second {
+            margin-right: -37px;
+        }
+    }
+    &__sitebar {
+        text-align: right;
+        margin-top: 80px;
+        
+        &-items {
+            margin-top: 21px;
+        }
+        &-item {
+            margin-left: 11px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        span {
+            color: white;
+            font-family: 'Roboto Regular';
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+h1 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+button, a, input, textarea {
+    text-decoration: none;
+    &:focus, &:active {
+        outline: none;
+    }
+}
+button {
+    padding: 0;
+    &:hover {
+        cursor: pointer;
+    }
+}
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    color: $gray;
+}
+
+.btn-gen {
+    background-color: $general;
+    color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+}
+

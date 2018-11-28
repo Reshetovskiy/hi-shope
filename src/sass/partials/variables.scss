@@ -1,0 +1,18 @@
+$xs: "screen and (max-width: 767px)";
+$sm: "screen and (max-width: 1180px)";
+$lg: "screen and (min-width: 1180px)";
+
+
+
+
+$gray: #6A6A6A;
+$general: #AC9349;
+$dots: #F3F3F3;
+$border: #F4F4F4;
+$input-text: #737373;
+
+
+// : 768
+@function wsm($value) {
+    @return ($value*100vw)/768
+};

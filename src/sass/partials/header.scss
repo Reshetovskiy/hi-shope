@@ -1,0 +1,52 @@
+.header {
+    &__wrapper {
+        width: 1072px;
+        height: 49px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    &__mobile {
+        display: none;
+    }
+    &__logo {
+        margin-right: 42px;
+    }
+    &__navbar {
+        margin-right: 12px;
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                margin-right: 26.7px;
+                a {
+                    font-family: 'Open Sans Light';
+                    color: $gray;
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+                &:last-child {
+                    a {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    &__interface {
+        &-items {
+            display: flex;
+            align-items: center;
+        }
+        &-item {
+            margin-right: 19px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        button {
+            border: none;
+            background-color: transparent;
+        }
+    }
+}
