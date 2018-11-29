@@ -92,15 +92,16 @@
 
 
         
-        $('.menu-btn').on('click', function (e) {
+        $('.menu').on('click', '.menu-btn', function (e) {
             e.preventDefault()
-            $('.mobile-menu').slideToggle(300)
+            $(this).parent().children('.mobile-menu').slideToggle(300);
         })
 
-        $('.menu-btn-1').on('click', function (e) {
+        $('.menu').on('click', '.menu-btn-1', function (e) {
             e.preventDefault()
-            $('.mobile-menu-1').slideToggle(300)
+            $(this).parent().children('.mobile-menu-1').slideToggle(300);
         })
+        
     })
 
     //=require partials/plugins.js
