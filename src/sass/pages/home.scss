@@ -212,6 +212,15 @@
                     &::placeholder {
                         color: $input-text;
                     }
+                    &:focus{
+                        border: 1px solid $border-menu;
+                    }
+                    &.error {
+                        border: 1px solid $danger;
+                    }
+                    &.valid {
+                        border: 1px solid $succes;
+                    }
                 }
                 button {
                     width: 324px;

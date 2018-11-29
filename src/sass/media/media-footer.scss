@@ -73,6 +73,15 @@
                 align-items: center;
                 width: 100%;
                 justify-content: space-between;
+                img {
+                    transform: rotate(0deg);
+                    transition: .3s;
+                }
+                &.active {
+                    img {
+                        transform: rotate(180deg);
+                    }
+                }
             }
         }
         &__wrapper {
@@ -97,16 +106,18 @@
         }
         &__block {
             &_last {
+                margin-top: 20px;
                 margin-right: 0;
                 ul {
                     display: none;
                     li {
-                        text-align: right;
+                        text-align: left;
                     }
                 }
             }
             &_second {
-                margin-right: -115px;
+                margin-top: 20px;
+                margin-right: 0;
                 display: none;
             }
         }

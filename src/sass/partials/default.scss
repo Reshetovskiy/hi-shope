@@ -50,5 +50,9 @@ body {
     text-align: center;
     border: none;
     border-radius: 3px;
+    transition: .3s;
+    &:hover {
+        background-color: $hover;
+    }
 }
 
