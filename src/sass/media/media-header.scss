@@ -44,14 +44,40 @@
             height: 50px;
             display: flex;
             align-items: center;
+            position: relative;
+            &.show {
+                .header__navbar {
+                    opacity: 1;
+                    height: auto;
+                    top: 0;
+                }
+                .header__mobile {
+                    z-index: 6;
+                    transform: rotate(90deg);
+                }
+                .header__mobile-menu  {
+                    z-index: 6;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .header__logo {
+                    z-index: 6;
+                }
+            }
         }
         &__mobile {
             display: block;
+            transition: .3s;
+            transform: rotate(0deg);
+            width: 20px;
+            height: 22px;
             button {
                 background-color: transparent;
                 border: none;
                 width: 20px;
                 height: 22px;
+                position: relative;
                 span {
                     display: block;
                     width: 100%;
@@ -71,7 +97,76 @@
             transform: translateX(-50%);
         }
         &__navbar {
-            display: none;
+            top: -100%;
+            overflow: hidden;
+            height: 0;
+            opacity: 0;
+            width: 252px;
+            position: absolute;
+            margin-right: 0;
+            left: 0;
+            padding-top: 50px;
+            margin-top: 0;
+            z-index: 5;
+            background-color: white;
+            transition: .3s;
+            ul {
+                flex-direction: column;
+                align-items: flex-start;;
+                li {
+                    width: 100%;
+                    margin-right: 0;
+                    position: relative;
+                    button {
+                        border: none;
+                        background-color: transparent;
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                    }
+                    a {
+                        display: block;
+                        width: 100%;
+                        padding: 15px;
+                        border-bottom: 1px solid $border-menu;
+                    }
+                    a {
+                        font-size: 16px;
+                    }
+                    &:last-child {
+                        a {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                &.mobile-menu {
+                    display: none;
+                    .menu-1 {
+                        display: block;
+                        border-bottom: 1px solid $border-menu;
+                        a {
+                            border: none;
+                            font-size: 14px;
+                            padding: 12px 15px;
+                        }
+                        button {
+                            top: 8px;
+                            opacity: .6;
+                        }
+                    }
+                    .mobile-menu-1 {
+                        display: none;
+                        li {
+                            a {
+                                border: none;
+                                font-size: 15px;
+                                color: #6A6A6A;
+                                padding: 7px 15px;
+                            }
+                        }
+                    }
+                }
+            }
         }
         &__interface {
             &-item {
