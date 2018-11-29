@@ -18,6 +18,10 @@
                 font-family: 'Roboto Regular';
                 a {
                     color: white;
+                    transition: .3s;
+                    &:hover {
+                        color: $general;
+                    }
                 }
             }
         }

@@ -19,11 +19,18 @@
             align-items: center;
             li {
                 margin-right: 26.7px;
+                button {
+                    display: none;
+                }
                 a {
                     font-family: 'Open Sans Light';
                     color: $gray;
                     font-size: 14px;
                     text-decoration: none;
+                    transition: .3s;
+                    &:hover {
+                        color: $general;
+                    }
                 }
                 &:last-child {
                     a {
