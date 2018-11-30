@@ -85,6 +85,47 @@
             }
         })
 
+        $("#register-validate").validate({
+            rules: {
+                name: {
+                    required: true
+                },
+                password: {
+                    required: true
+                },
+                password2: {
+                    required: true
+                },
+                number: {
+                    required: true,
+                    number: true
+                },
+                mail: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name:  {
+                    required: ' '
+                },
+                password:  {
+                    required: ' '
+                },
+                password2:  {
+                    required: ' '
+                },
+                number:  {
+                    required: ' ',
+                    number: ' '
+                },
+                mail:  {
+                    required: ' ',
+                    email: ' '
+                }
+            }
+        })
+
         $('.home-content__head-mobile button').on('click', function (e) {
             e.preventDefault()
             $('.home-content__head-mobile button span').toggle()
@@ -97,11 +138,44 @@
             $(this).parent().children('.mobile-menu').slideToggle(300);
         })
 
+
+
         $('.menu').on('click', '.menu-btn-1', function (e) {
             e.preventDefault()
             $(this).parent().children('.mobile-menu-1').slideToggle(300);
         })
+
+        $('.mobile-menu').hide()
+
         
+        $('.menu').on('click', '.dekstop-menu', function (e) {
+            e.preventDefault()
+            $(this).parent().children('.mobile-menu').slideToggle(300);
+        })
+
+        $('.like').on('click', function (){
+            $('.header-like').slideToggle(300)
+            $('.header-pay').slideUp(0)
+            $('.header-user').slideUp(0)
+        })
+
+        $('.pay').on('click', function (e){
+            e.preventDefault()
+            $('.header-pay').slideToggle(300)
+            $('.header-like').slideUp(0)
+            $('.header-user').slideUp(0)
+        })
+
+        $('.user').on('click', function (e){
+            e.preventDefault()
+            $('.header-user').slideToggle(300)
+            $('.header-like').slideUp(0)
+            $('.header-pay').slideUp(0)
+        })
+
+        $('label').on('click', function (){
+            $(this).toggleClass('active')
+        })
     })
 
     //=require partials/plugins.js

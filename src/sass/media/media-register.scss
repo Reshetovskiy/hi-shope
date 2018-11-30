@@ -1,0 +1,36 @@
+@media #{$sm} {
+    .register {
+        overflow: hidden;
+        &__wrapper {
+            width: 100%;
+            margin-left: 20px;
+        }
+    }
+}
+
+@media #{$xs} {
+    .register {
+        &__wrapper {
+            width: 100%;
+            margin-left: 0px;
+            padding: 18px 10px 35px 10px;
+        }
+        &__text {
+            margin-bottom: 18px;
+            line-height: 18px;
+        }
+        &__form {
+            &-group {
+                width: 300px;
+                &_inner {
+                    width: auto;
+                    label {
+                        .checkbox-custom {
+                            min-width: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

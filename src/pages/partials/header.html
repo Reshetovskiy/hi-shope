@@ -15,7 +15,7 @@
                 <ul class="header__navbar-items">
                     <li class="menu"><a href="#">Акции </a></li>
                     <li class="menu">
-                        <a href="#">Уход за волосами</a>
+                        <a href="#" class="dekstop-menu">Уход за волосами</a>
                         <button class="menu-btn"><img src="img/arrow-gray.png" alt=""></button>
                         <ul class="mobile-menu">
                             <li class="menu-1">
@@ -38,18 +38,36 @@
                                 <a href="#">Тип волос</a>
                                 <button class="menu-btn-1"><img src="img/arrow-gray.png" alt=""></button>
                                 <ul class="mobile-menu-1">
-                                    <li><a href="#">Шампунь</a></li>
-                                    <li><a href="#">Кондиционер</a></li>
-                                    <li><a href="#">Маска </a></li>
+                                    <li><a href="#">Окрашенные</a></li>
+                                    <li><a href="#">Поврежденные, сухие и ломкие</a></li>
+                                    <li><a href="#">Блонд</a></li>
+                                    <li><a href="#">Непослушные и вьющиеся   </a></li>
+                                    <li><a href="#">Склонные к жирности</a></li>
+                                    <li><a href="#">Седые</a></li>
+                                    <li><a href="#">Нормальные</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-1">
+                            <li class="menu-1 menu-1_last">
                                 <a href="#">Потребность</a>
                                 <button class="menu-btn-1"><img src="img/arrow-gray.png" alt=""></button>
                                 <ul class="mobile-menu-1">
-                                    <li><a href="#">Шампунь</a></li>
+                                    <li><a href="#">Восстановление</a></li>
+                                    <li><a href="#">Увлажнение </a></li>
+                                    <li><a href="#">Блеск</a></li>
+                                    <li><a href="#">Объем</a></li>
+                                    <li><a href="#">Защита</a></li>
+                                    <li><a href="#">Против секущихся концов</a></li>
+                                    <li><a href="#">Против выпадения волос</a></li>
+                                    <li><a href="#">Против перхоти </a></li>
+                                    <li><a href="#">Уход за кожей головы</a></li>
                                 </ul>
                             </li>
+                            <div class="menu-block">
+                                <img src="img/home-img.png" alt="">
+                                <h5>Название товара</h5>
+                                <p>Описание товара в несколько строчек, в две строки</p>
+                                <a href="#">Подробнее<img src="img/link-arrow.png" alt=""></a>
+                            </div>
                         </ul>
                     </li>
                     <li class="menu"><a href="#">Стайлинг</a>
@@ -64,15 +82,97 @@
         </div>
         <div class="header__interface">
             <div class="header__interface-items">
-                <a href="#" class="header__interface-item">
+                <a href="#" class="header__interface-item user">
                     <img src="img/user.png" alt="">
                 </a>
-                <button class="header__interface-item">
+                <div class="header-user">
+                    <div class="header-modal">
+                        <div class="header-modal__wrapper">
+                            <form action="#">
+                                <div class="header-user__name">
+                                    Вход
+                                </div>
+                                <div class="header-user__group">
+                                    <input class="input" type="text" placeholder="Логин, телефон">
+                                </div>
+                                <div class="header-user__group">
+                                    <input class="input" type="text" placeholder="Пароль">
+                                </div>
+                                <div class="header-user__group">
+                                    <button class="btn-gen">Вход</button>
+                                </div>
+                                <span>или</span>
+                                <div class="header-user__group">
+                                    <a href="./registr.html" class="btn-gen_1">Зарегистрироваться</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button class="header__interface-item like">
                     <img src="img/like.png" alt="">
                 </button>
-                <button class="header__interface-item">
+                <div class="header-like">
+                    <div class="header-modal">
+                        <div class="header-modal__wrapper">
+                            <div class="header-modal__head">
+                                <span>Товаров в избранном: </span>
+                                <span class="number">1</span>
+                            </div>
+                            <div class="header-modal__content">
+                                <div class="header-modal__content-left">
+                                    <img src="img/modal-img.png" alt="">
+                                </div>
+                                <div class="header-modal__content-right">
+                                    <h4>Название товара в несколько строк</h4>
+                                    <p>Описание товара в несколько строк, в две строки.</p>
+                                    <div class="size">
+                                        <span>300мл</span>
+                                        <span>х</span>
+                                        <span>450р</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-modal__button">
+                                <button class="btn-gen">Перейти в избранное</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="header__interface-item pay">
                     <img src="img/pay.png" alt="">
                 </button>
+                <div class="header-pay">
+                    <div class="header-modal">
+                        <div class="header-modal__wrapper">
+                            <div class="header-modal__head">
+                                <span>Товаров в корзине: </span>
+                                <span class="number">1</span>
+                            </div>
+                            <div class="header-modal__content">
+                                <div class="header-modal__content-left">
+                                    <img src="img/modal-img.png" alt="">
+                                </div>
+                                <div class="header-modal__content-right">
+                                    <h4>Название товара в несколько строк</h4>
+                                    <p>Описание товара в несколько строк, в две строки.</p>
+                                    <div class="size">
+                                        <span>300мл</span>
+                                        <span>х</span>
+                                        <span>450р</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-pay__block">
+                                <span>ИТОГО:</span>
+                                <span>450р</span>
+                            </div>
+                            <div class="header-modal__button">
+                                <button class="btn-gen">Перейти в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <button class="header__interface-item">
                     <img src="img/search.png" alt="">
                 </button>

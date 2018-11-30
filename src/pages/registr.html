@@ -1,0 +1,60 @@
+<!--=include partials/layouts/begin.html -->
+    <!--=include partials/header.html -->
+    
+    <div class="register">
+        <div class="register__wrapper">
+            <h1 class="register__name">РЕГИСТРАЦИЯ</h1>
+            <div class="register__text">Все поля обязательны, если нет пометки «Опционально»</div>
+            <div class="register__form">
+                <form action="#" id="register-validate" class="form">   
+                    <div class="register__form-group">
+                        <input class="input" name="name" type="text" placeholder="Имя, фамилия">
+                    </div>
+                    <div class="register__form-group">
+                        <input class="input" name="mail" type="text" placeholder="E-mail">
+                    </div>
+                    <div class="register__form-group">
+                        <input class="input" name="password" type="text" placeholder="Пароль">
+                    </div>
+                    <div class="register__form-group">
+                        <input class="input" name="password2" type="text" placeholder="Подтвердите пароль">
+                    </div>
+                    <div class="register__form-group">
+                        <input class="input" name="number" type="text" placeholder="+7 (999) 233-23-23">
+                    </div>
+                    <div class="register__form-text">(Опционально)</div>
+                    <div class="register__form-group">
+                        <label>
+                            <input class="checkbox" type="checkbox" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Подключить SMS-уведомления</span>
+                        </label>
+                        <p>Новости, акции, смена статуса заказа и многое другое.</p>
+                    </div>
+                    <div class="register__form-group">
+                        <input class="input" type="text" placeholder="Дата рождения">
+                    </div>
+                    <div class="register__form-group">
+                        <label>
+                            <input class="checkbox" type="checkbox" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Подписаться на рассылку</span>
+                        </label>
+                    </div>
+                    <div class="register__form-group register__form-group_inner">
+                        <label>
+                            <input class="checkbox" type="checkbox" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <p class="label">Я даю согласие на обработку моих персональных данных в порядке и на <a href="#">условиях</a>, указанных в согласии.</p>
+                        </label>
+                    </div>
+                    <div class="register__form-group">
+                        <button class="btn-gen_1">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+        <!--=include partials/footer.html -->
+    <!--=include partials/layouts/end.html -->
