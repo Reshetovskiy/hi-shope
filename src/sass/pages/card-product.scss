@@ -1,0 +1,244 @@
+.card-product {
+    &__wrapper {
+        margin-top: 22px;
+        margin-bottom: 96px;
+    }
+    &__head {
+        width: 1017px;
+        margin:  0 auto;
+        display: flex;
+        color: $gray;
+        font-family: 'Roboto Light';
+        margin-top: 20px;
+        margin-bottom: 89px;
+        &-left {
+            position: relative;
+            .like {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        &-right {
+            margin-top: 3px;
+            width: 479px;
+            margin-left: 80px;
+        }
+        &-block {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            img {
+                margin-right: 4px;
+            }
+        }
+        &-name {
+            font-size: 18px;
+            font-family: 'Roboto Regular';
+            color: $gray;
+        }
+        &-text {
+            font-size: 12px;
+            font-family: 'Roboto Light';
+            color: $gray;
+            line-height: 15px;
+        }
+        &-volume {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .volume {
+                display: flex;
+                align-items: center;
+                p {
+                    background-color: #F6F6F6;
+                    border-radius: 25px;
+                    width: 55px;
+                    height: 17px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &.active {
+                        background-color: $hover;
+                        position: relative;
+                        left: -9px;
+                        span {
+                            color: white;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                span {
+                    font-size: 8px;
+                    font-family: 'Roboto Regular';
+                    color: #9A9A9A;
+                }
+            }
+            .volume-name, .inform {
+                font-size: 12px;
+            }
+            .volume-name {
+                margin-right: 7px;
+            }
+            .inform {
+                color: $general;
+            }
+        }
+        &-price {
+            font-size: 16px;
+            font-family: 'Roboto Light';
+            margin-top: 16px;
+            margin-bottom: 4px;
+        }
+        &-button {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            button {    
+                width: 174.03px;
+                height: 34.35px;
+                font-size: 12px;
+                &:first-child {
+                   margin-right: 20px;
+                }
+            }
+        }
+    }
+    &__nav {
+        width: 1044px;
+        margin:  0 auto;
+    }
+    &__content {
+        position: relative;
+        .line {
+            position: absolute;
+            height: 5px;
+            background-color: #F6F6F6;
+            top: 41px;
+            width: 100%;
+            z-index: -1;
+        }
+        .nav-tabs {
+            width: 1044px;
+            margin:  0 auto;
+            border: none;
+            padding: 0 76px;
+            .nav-item {
+                margin-right: 54px;
+                margin-bottom: 0;
+                &:last-child {
+                    margin-right: 0;
+                }
+                .nav-link {
+                    width: 165px;
+                    text-align: center;
+                    padding: 0;
+                    font-size: 18px;
+                    color: #6A6A6A;
+                    font-family: 'Roboto Light';
+                    padding-bottom: 14px;
+                    &:hover {
+                        border-color: none;
+                        border: none;
+                        padding-bottom: 14px;
+                    }
+                    &.active {
+                        border-color: none;
+                        border: none;
+                        border-bottom: 5px solid #D9C68D;
+                        border-radius: 3px;
+                        color: $hover;
+                        font-family: 'Roboto Regular';
+                    }
+                }
+            }
+        }
+        .tab-content {
+            width: 1044px;
+            margin: 26px auto 0;
+            .tab-pane {
+                &_reviews {
+                    h5 {
+                        font-size: 18px;
+                        color: #646464;
+                        font-family: 'Roboto Regular';
+                    }
+                    button {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 174.03px;
+                        height: 34.35px;
+                    }
+                    .number {
+                        position: absolute;
+                        bottom: 7px;
+                        right: 190px;
+                        font-size: 13px;
+                        color: #6E6E6E;
+                        font-family: 'Roboto Light';
+                    }
+                }
+            }
+        }
+    }
+    &__write {
+        position: relative;
+        height: 168px;
+        margin-bottom: 15px;
+        textarea {
+            width: 100%;
+            height: 168px;
+            background: #F6F6F6;
+            border-radius: 5px;
+            border: none;
+            padding: 15px;
+            padding-bottom: 25px;
+        }
+    }
+    &__tab-block {
+        position: absolute;
+        bottom: 10px;
+        left: 22px;
+        img {
+            margin-right: 10px;
+        }
+    }
+    &__tab-reviews {
+        margin-bottom: 11px;
+        padding: 20px 21px 10px;
+        min-height: 188px;
+        border: 2px solid #F9F9F9;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .card-product__tab-block {
+            position: initial;
+            img {
+                margin-right: 3px;
+            }
+        }
+        h6 {
+            font-size: 16px;
+            font-family: 'Roboto Regular';
+            margin-bottom: 17px;
+        }
+        span {
+            font-size: 14px;
+            font-family: 'Roboto Light';
+            color: #6A6A6A;
+            display: block;
+            line-height: 16px;
+        }
+    }
+    &__tab-bot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__tab-date {
+        font-size: 14px;
+        font-family: 'Roboto Light';
+    }
+}
