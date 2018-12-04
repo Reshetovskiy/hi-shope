@@ -1,0 +1,23 @@
+.head-section {
+    .container-head {
+        position: relative;
+        &__img {
+            background: #000;
+        }
+        &__title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+        }
+    }
+    &.after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba($color: #000000, $alpha: .5)
+
+    }
+}
