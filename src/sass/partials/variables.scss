@@ -20,3 +20,7 @@ $danger: #E32727;
 @function wsm($value) {
     @return ($value*100vw)/768
 };
+// : 320
+@function wxs($value) {
+    @return ($value*100vw)/320
+};

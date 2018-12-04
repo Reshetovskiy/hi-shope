@@ -1,0 +1,27 @@
+.politic {
+    &__wrapper {
+        width: 1015px;
+        margin: 30px auto 200px;
+    }
+    &__name {
+        font-size: 14px;
+        color: $gray;
+        text-transform: uppercase;
+        font-family: 'Roboto Regular';
+        margin-bottom: 15px;
+    }
+    &__nav {
+        margin-bottom: 25px;
+        .nav-menu {
+            margin-left: 0;
+        }
+    }
+    .small {
+        margin-bottom: 15px;
+    }
+    &_buy {
+        .politic__block {
+            margin-bottom: 60px;
+        }
+    }
+}

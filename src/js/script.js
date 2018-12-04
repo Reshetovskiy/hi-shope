@@ -153,6 +153,20 @@
             $(this).parent().children('.mobile-menu').slideToggle(300);
         })
 
+        $('.product-filter').on('click', '.product-filter__name', function () {
+            $(this).parent().children('.product-filter__block-repeat').slideToggle(300);
+            $(this).parent().children('.product-filter__name').toggleClass('active')
+        })
+
+
+        $('.mobile-filter').on('click', function () {
+            $('.product-filter__repeat').slideDown(300)
+        })
+
+        $('.mobile-filter__close').on('click', function () {
+            $('.product-filter__repeat').slideUp(300)
+        })
+
         $('.like').on('click', function (){
             $('.header-like').slideToggle(300)
             $('.header-pay').slideUp(0)

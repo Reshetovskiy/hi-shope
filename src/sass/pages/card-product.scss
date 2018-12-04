@@ -23,6 +23,12 @@
             margin-top: 3px;
             width: 479px;
             margin-left: 80px;
+            position: relative;
+            .palitre {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
         }
         &-block {
             margin-top: 5px;
@@ -86,9 +92,13 @@
         }
         &-price {
             font-size: 16px;
-            font-family: 'Roboto Light';
+            font-family: 'Roboto Regular';
             margin-top: 16px;
             margin-bottom: 4px;
+            span {
+                text-decoration: line-through;
+                font-size: 16px;
+            }
         }
         &-button {
             display: flex;
@@ -156,6 +166,14 @@
         .tab-content {
             width: 1044px;
             margin: 26px auto 0;
+            .tab-first {
+                padding: 12px 157px 0px 12px;
+                .small {
+                    margin-top: 20px;
+                    display: block;
+                    line-height: 18px;
+                }
+            }
             .tab-pane {
                 &_reviews {
                     h5 {

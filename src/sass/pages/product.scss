@@ -1,11 +1,18 @@
 .product {
+    .mobile-filter {
+        display: none;
+        &__name, &__close {
+            display: none;
+        }
+    }
     &__wrapper {
         display: flex;
-        width: 1090px;
+        width: 1082px;
         margin: 21px auto;
     }
     &-right {
         &__head {
+            padding-right: 13px;
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -26,6 +33,7 @@
             &__name {
                 font-size: 14px;
                 font-family: 'Roboto Light';
+                margin-right: 17px;
             }
         }
     }
@@ -88,6 +96,7 @@
 }
 
 .select-filter {
+    border: 0.75px solid #F2F2F2;
     .select2-search__field {
         display: none;
     }
@@ -106,11 +115,75 @@
     }
 }
 .select2-container--default {
+    width: 126px !important;
     .select2-selection--single {
+        border: 0.75px solid #F2F2F2;
+        height: 22px;
         .select2-selection__rendered {
             font-size: 12px;
             font-family: 'Roboto Light';
             color: #949494;
+            position: relative;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 18px;
+            &:before {
+                position: absolute;
+                content: '';
+                top: 50%;
+                transform: translateY(-50%);
+                right: 6px;
+                background-image: url('../img/arrow-top.png');
+                width: 7px;
+                height: 7px;
+            }
         }
+        .select2-selection__arrow {
+            display: none;
+        }
+        &:focus, &:hover {
+            outline: none;
+        }
+    }
+    .select2-search--dropdown {
+        padding: 0;
+    }
+    .select2-results__option {
+        padding: 4px 10px;
+        position: relative;
+        border-bottom: 1px solid #F2F2F2;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            transform: translateY(-50%);
+            right: 6px;
+            background-image: url('../img/arrow-top.png');
+            width: 7px;
+            height: 7px;
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+        &:nth-child(2n) {
+            &:before {
+                position: absolute;
+                content: '';
+                top: 40%;
+                transform: rotate(180deg);
+                right: 6px;
+                background-image: url('../img/arrow-top.png');
+                width: 7px;
+                height: 7px;
+            }
+        }
+        &--highlighted[aria-selected] {
+            background: #F9F9F9;
+            color: #AEAEAE;
+        }
+    }
+    .select2-results__option[aria-selected=true] {
+        background: $hover;
+        color: white;
     }
 }

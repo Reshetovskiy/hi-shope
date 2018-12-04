@@ -1,0 +1,27 @@
+<!--=include partials/layouts/begin.html -->
+    <!--=include partials/header.html -->
+    <div class="actions">
+        <div class="actions__wrapper">
+            <div class="politic__nav">
+                <ul class="nav-menu">
+                    <li><a href="#">Хлебные</a>/</li>
+                    <li><a href="#">Крошки</a>/</li>
+                    <li><span>Здесь</span></li>
+                </ul>
+            </div>
+            <h1 class="actions__name">Акции</h1>
+            <div class="actions__content">
+                @@for (var i = 0; i < 6; i++) {
+                    <div class="actions__block">
+                        <img src="img/action.png" alt="">
+                        <h5>Название акции</h5>
+                        <p class="small">Описание акции в несколько строчек</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+
+    <!--=include partials/footer.html -->
+<!--=include partials/layouts/end.html -->

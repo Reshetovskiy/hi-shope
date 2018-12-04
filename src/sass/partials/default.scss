@@ -156,4 +156,15 @@ label {
         z-index: 2;
     }
 }
+.small {
+    font-size: 14px;
+    color: $gray;
+    font-family: 'Roboto Light';
+}
+.big-text {
+    font-family: 'Roboto Light';
+    font-size: 14px;
+    color: $gray;
+    text-transform: uppercase;
+}
 
