@@ -47,45 +47,8 @@
             font-family: 'Open Sans Light';
         }
         label {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
             .label {
                 font-size: 14px;
-            }
-            .checkbox {
-                display: none;
-            }
-            .checkbox-custom {
-                position: relative; 
-                margin-right: 14px;  
-                width: 26px;
-                height: 26px;
-                border: none;
-                background-color: #F5F5F5;
-                border-radius: 3px;
-            }
-            .checkbox-custom,
-            .label {
-                display: inline-block;
-                vertical-align: middle;
-                a {
-                    color: $hover;
-                }
-            }
-            .checkbox:checked + .checkbox-custom::before {
-                border-radius: 2px;
-                background-color: $general;
-                border: 1px solid $general;
-                width: 13px;
-                height: 13px;
-                display: block;
-                position: absolute;
-                content: '';
-                font-size: 30px;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
             }
         }
     }

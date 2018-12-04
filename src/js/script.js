@@ -176,6 +176,15 @@
         $('label').on('click', function (){
             $(this).toggleClass('active')
         })
+
+
+        $('.select-filter').select2({
+            minimumResultsForSearch: -1
+        })
+
+        $('.select-filter').select2({
+            dropdownCssClass: 'select-filter'
+        });
     })
 
     //=require partials/plugins.js

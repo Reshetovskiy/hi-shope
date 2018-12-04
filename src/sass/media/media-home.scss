@@ -68,35 +68,6 @@
                         }
                     }
                 }
-                &-foname {
-                    font-size: 16px;
-                    margin: 21px 0 9px;
-                }
-                &-text {
-                    margin: 0 auto;
-                    font-size: 12px;
-                    font-family: 'Open Sans Light';
-                    max-width: 173px;
-                    line-height: 14px;
-                    margin-bottom: 10px;
-                }
-                &-price {
-                    font-size: 16px;
-                    margin-top: 8px;
-                    margin-bottom: 10px;
-                }
-                &-button {
-                    button {
-                        width: 175px;
-                        height: 35px;
-                    }
-                }
-                &-like {
-                    position: absolute;
-                    top: 5px;
-                    right: 8px;
-                    opacity: 0;
-                }
                 .swiper-container-middle {
                     width: 491px;
                     margin:  0 auto;
@@ -305,23 +276,6 @@
                             opacity: 1;
                         }
                     }
-                }
-                &-foname {
-                    font-size: 16px;
-                    margin: 21px 0 9px;
-                }
-                &-text {
-                    margin: 0 auto;
-                    font-size: 12px;
-                    font-family: 'Open Sans Light';
-                    max-width: 173px;
-                    line-height: 14px;
-                    margin-bottom: 10px;
-                }
-                &-price {
-                    font-size: 16px;
-                    margin-top: 8px;
-                    margin-bottom: 10px;
                 }
                 &-button {
                     button {
