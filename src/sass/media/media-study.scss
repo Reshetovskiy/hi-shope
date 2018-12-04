@@ -1,0 +1,92 @@
+@media #{$lg} {
+     
+     
+}
+@media #{$sm} { 
+    .vebinar-section {
+        padding: 0 wsm(26) 0 wsm(26);
+        .bready-crumbs {
+            margin: wsm(12) 0 0 0;
+            .nav-menu {
+                margin-left: 0;
+            }
+        }
+        .title-block {
+            text-align: left;
+            &__name {
+                margin: wsm(30) 0 0 0;
+            }
+        }
+        .g-block {
+            width: wsm(725);
+            margin: wsm(32) 0 wsm(10) 0;
+            &__left {
+                width: wsm(320);
+                height: wsm(331);
+                img {
+                    object-fit: cover;
+                    width: wsm(320);
+                    height: wsm(331);
+                }
+            }
+            &__right {
+                width: wsm(375);
+                margin: 0 0 0 wsm(30);
+                &-title {
+                    margin-bottom: wsm(13);
+                }
+                &-text {
+                    line-height: normal;
+                    margin-bottom: wsm(40);
+                }
+                .more {
+                    width: wsm(228);
+                }
+            }
+        }
+    }
+}
+@media #{$xs} {
+    .vebinar-section {
+        padding: 0 10px 0 10px;
+        .bready-crumbs {
+            margin: 14px 0 0 0;
+        }
+        .title-block {
+            &__name {
+                margin: 25px 0 15px 0;
+            }
+        }
+        .g-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &__left {
+                width: 100%;
+                height: 317px;
+                text-align: center;
+                img {
+                    margin: 0 auto;
+                    width: 300px;
+                    height: 317px;
+                }
+            }
+            &__right {
+                margin: 0;
+                width: 100%;
+                display: block;
+                padding: 0 15px 0 15px;
+                &-title {
+                    margin: 17px 0 10px 0;
+                    margin-left: 0;
+                }
+                &-text {
+
+                }
+                .more {
+                    width: 228px;
+                }
+            }
+        }
+    }
+}
