@@ -7,7 +7,7 @@
             display: flex;
         }
         &__block {
-            width: 203px;
+            width: wsm(203);
             padding: 11px 23px 4px 15px;
             min-height: 136px;
             border: 1px solid  #F1F1F1;
@@ -17,7 +17,7 @@
             &.active {
                 padding: 13px 29px 7px;
                 background: #CEAE50;
-                width: 231px;
+                width: wsm(231);
                 .payment__block-name {
                     font-size: 16px;
                     color: #FFFFFF;
@@ -33,7 +33,7 @@
             }
             &_first {
                 padding: 11px 23px 12px 15px;
-                width: 231px;
+                width: wsm(231);
             }
             &-name {
                 font-size: 14px;
@@ -53,7 +53,7 @@
         }
         &__form {
             padding: 0 15px;
-            margin-top: 48px;
+            margin-top: 25px;
             margin-bottom: 31px;
             display: flex;
             align-items: center;
@@ -63,27 +63,29 @@
                 font-family: 'Roboto Regular';
             }
             input {
-                width: 386px;
+                width: wsm(386);
     
             }
             button {
-                width: 192px;
+                width: wsm(191);
                 margin-left: -7px;
             }
         }
     }
     .delivery {
         &__text {
+            padding: 0 15px;
             font-size: 14px;
             color: #AC9349;
             font-family: 'Roboto Regular';
-            margin-top: 15px;
-            margin-bottom: 73px;
+            margin-top: 10px;
+            margin-bottom: 33px;
         }
         &__wrapper {
             padding: 0 15px;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
         }
         &__block {
             padding: 20px 12px 16px 16px;
@@ -94,7 +96,8 @@
             width: 532px;
             min-height: 229px;
             &:first-child {
-                margin-right: 7px;
+                margin-right: 0;
+                margin-bottom: 9px;
             }
             &:last-child {
                 .delivery__block-text {
@@ -138,15 +141,179 @@
     }
     .politic__wrapper_payment {
         margin: 15px auto 100px;
-        padding: 0;
+        padding: 0 15px;
     }
     .politic__nav_payment {
         margin-bottom: 11px;
         width: 100%;
         padding-left: 15px;
         margin:  0 auto;
-        margin-top: 16px;
+        margin-top: 0;
         margin-bottom: 11px;
     }
+}
 
+@media #{$xs} {
+    .payment {
+        &__wrapper {
+            width: 100%;
+        }
+        &__head {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__block {
+            width: 160px;
+            padding: 7px 7px 12px 7px;
+            min-height: 139px;
+            border: 1px solid  #F1F1F1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &.active {
+                padding: 18px 14px 10px;
+                background: #CEAE50;
+                width: 160px;
+                .payment__block-name {
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    margin-bottom: 16px;
+                    line-height: 17px;
+                }
+                .payment__block-text {
+                    color: #FFFFFF;
+                }
+                .payment__block-price {
+                    font-size: 14px;
+                }
+            }
+            &_first {
+                border: none;
+                min-height: auto;
+                width: 320px;
+                padding: 11px 23px 12px 15px;
+                .payment__block-name {
+                    margin-bottom: 16px;
+                }
+            }
+            &-name {
+                font-size: 14px;
+                font-family: 'Roboto Medium';
+                line-height: 18px;
+            }
+            &-text {
+                font-size: 14px;
+                font-family: 'Roboto Light';
+                line-height: 17px;
+            }
+            &-price {
+                font-size: 14px;
+                font-family: 'Roboto Medium';
+                margin-top: 21px;
+            }
+        }
+        &__form {
+            padding: 0 15px;
+            margin-top: 33px;
+            margin-bottom: 23px;
+            display: block;
+            &-name {
+                font-size: 14px;
+                font-family: 'Roboto Regular';
+                margin-bottom: 9px;
+            }
+            input {
+                width: 100%;
+                margin-bottom: 11px;
+            }
+            button {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+    .delivery {
+        &__text {
+            padding: 0 15px;
+            font-size: 14px;
+            color: #AC9349;
+            font-family: 'Roboto Regular';
+            margin-top: 10px;
+            margin-bottom: 33px;
+        }
+        &__wrapper {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__block {
+            padding: 11px 7px 16px 10px;
+            display: block;
+            justify-content: space-between;
+            border: 1px solid #F1F1F1;
+            border-radius: 0;
+            width: 320px;
+            min-height: 229px;
+            height: 371px;
+            &:first-child {
+                margin-right: 0;
+                margin-bottom: -1px;
+            }
+            &:last-child {
+                .delivery__block-text {
+                    margin-bottom: 20px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            &-name {
+                font-size: 14px;
+                font-family: 'Roboto Light';
+                margin-bottom: 52px;
+                &_inner {
+                    font-family: 'Roboto Regular';
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            &-right {
+                position: relative;
+                top: -285px;
+            }
+            &-text {
+                text-align: left;
+                font-size: 14px;
+                font-family: 'Roboto Regular';
+                margin-bottom: 51px;
+                &_inner {
+                    font-size: 12px;
+                    color: #AC9349;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    img {
+                        margin-left: 8px;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .politic__wrapper_payment {
+        margin: 15px auto 100px;
+        padding: 0 15px;
+    }
+    .politic__nav_payment {
+        margin-bottom: 11px;
+        width: 100%;
+        padding-left: 15px;
+        margin:  0 auto;
+        margin-top: 0;
+        margin-bottom: 11px;
+    }
 }
