@@ -173,6 +173,11 @@
                     display: block;
                     line-height: 18px;
                 }
+                &_three {
+                    .small {
+                        margin-bottom: 20px;
+                    }
+                }
             }
             .tab-pane {
                 &_reviews {
@@ -204,11 +209,12 @@
         position: relative;
         height: 168px;
         margin-bottom: 15px;
+        background: #F6F6F6;
+        border-radius: 5px;
         textarea {
             width: 100%;
-            height: 168px;
-            background: #F6F6F6;
-            border-radius: 5px;
+            height: 130px;
+            background-color: transparent;
             border: none;
             padding: 15px;
             padding-bottom: 25px;

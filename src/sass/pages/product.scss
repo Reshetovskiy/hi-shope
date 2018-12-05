@@ -79,6 +79,10 @@
             .checkbox:checked + .checkbox-custom::before {
                 width: 14px;
                 height: 14px;
+                display: flex;
+                top: 3.5px;
+                left: 3.5px;
+                transform: translate(0);
             }
         }
     }
