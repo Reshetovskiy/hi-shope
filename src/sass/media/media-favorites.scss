@@ -1,0 +1,129 @@
+@media #{$sm} {
+    .favorites {
+        &-info {
+            margin-top: 21px;
+            width: 100%;
+            padding:  0 20px;
+        }
+        &-block {
+            padding-right: 20px;
+            width: 100%;
+            &__left {
+                h5 {
+                    margin-left: 15px;
+                }
+            }
+            &__right {
+                display: flex;
+                align-items: center;
+                p {
+                    font-size: 18px;
+                    font-family: 'Roboto Regular';
+                    margin-right: 56px;
+                    margin-left: 56px;
+                    &.size {
+                        font-family: 'Roboto Light';
+                        margin: 0;
+                    }
+                }
+                .btn-gen {
+                    width: 134px;
+                }
+                .close {
+                    margin-left: 21px;
+                    span {
+                        display: none;
+                    }
+                    img {
+                        width: 15px;
+                        height: 15px;
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media #{$xs} {
+    .favorites {
+        &-info {
+            margin-top: 15px;
+            width: 100%;
+            padding:  0 8px;
+        }
+        &-block {
+            position: relative;
+            padding-right: 0;
+            display: block;
+            width: 100%;
+            margin-bottom: 7px;
+            .mobile-quantity {
+                display: block;
+                margin-left: 5px;
+                margin-right: -116px;
+            }
+            &__left {
+                border-bottom: 1px solid #E7E7E7;
+                img {
+                    width: 56px;
+                    height: 55px;
+                }
+                h5 {
+                    margin-left: 15px;
+                    display: none;
+                    &.mobile-name {
+                        display: block;
+                        font-size: 14px;
+                    }
+                }
+            }
+            &__right {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                    font-size: 14px;
+                    font-family: 'Roboto Regular';
+                    margin: 0;
+                    &.size {
+                        font-family: 'Roboto Light';
+                        margin: 0;
+                    }
+                    &.price {
+                        margin-left: -42px;
+                    }
+                }
+                .btn-gen {
+                    border-radius: 0;
+                    width: 48px;
+                    height: 48px;
+                    background: #CEAE50;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span {
+                        display: none;
+                    }
+                    img {
+                        display: block;
+                    }
+                }
+                .close {
+                    margin-left: 21px;
+                    top: 10px;
+                    right: 12px;
+                    position: absolute;
+                    span {
+                        display: none;
+                    }
+                    img {
+                        width: 8px;
+                        height: 8px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

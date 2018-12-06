@@ -139,6 +139,11 @@
         })
 
 
+        $('.favorites-info').on('click', '.close', function () {
+            $(this).parent().children('.favorites-block').slideDown(300);
+        })
+
+
 
         $('.menu').on('click', '.menu-btn-1', function (e) {
             e.preventDefault()

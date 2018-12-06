@@ -1,0 +1,116 @@
+<!--=include partials/layouts/begin.html -->
+    <!--=include partials/header.html -->
+
+    <div class="card-product card-product_personal">
+        <div class="card-product__wrapper">
+            <div class="card-product__nav">
+                <ul class="nav-menu">
+                    <li><a href="#">Хлебные</a>/</li>
+                    <li><a href="#">Крошки</a>/</li>
+                    <li><span>Здесь</span></li>
+                </ul>
+            </div>
+            <div class="personal">
+                <div class="personal__wrapper">
+                    <div class="personal__head">
+                        <div class="personal__name">История заказов</div>
+                        <div class="personal__text">Здесь вы можете изменить ваши персональные данные, настроить уведомления, посмотреть историю заказов и др.</div>
+                    </div>
+                </div>
+                <div class="personal__content">
+                    <div class="line"></div>
+                    <div class="personal__menu">
+                        <ul>
+                            <li ><a href="#">Личные данные</a></li>
+                            <li class="active"><a href="#">История заказов</a></li>
+                            <li><a href="#">Избранное </a></li>
+                        </ul>
+                        <a href="#" class="out">
+                            Выйти
+                        </a>
+                    </div>
+                    <div class="story">
+                        <div class="story__wrapper">
+                            <div class="story__names">
+                                <p>№</p>
+                                <p>Дата заказа</p>
+                                <p>Сумма заказа</p>
+                                <p>Статус</p>
+                                <p>Статус оплаты</p>
+                            </div>
+                        </div>
+                        <div class="story__collapse">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <span>1</span>
+                                                <span>29.09.2018 15:44</span>
+                                                <span>5 430 руб.</span>
+                                                <span>Отправлен</span>
+                                                <span>Оплачен</span>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Collapsible Group Item #2
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Collapsible Group Item #3
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="favorites-info">
+                        <div class="favorites-block">
+                            <div class="favorites-block__left">
+                                <img src="img/home-img.png" alt="">
+                                <h5>Название товара</h5>
+                                <h5 class="mobile-name">Название товара в несколько новых строчек</h5>
+                            </div>
+                            <div class="favorites-block__right">
+                                <p class="mobile-quantity">Кол-во:<p>
+                                <p class="size">300мл</p>
+                                <p class="price">450р.</p>
+                                <button class="close"><span>Удалить</span> <img src="img/close.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+        <!--=include partials/footer.html -->
+    <!--=include partials/layouts/end.html -->

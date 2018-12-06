@@ -1,0 +1,67 @@
+.favorites {
+    &-info {
+        margin-top: 21px;
+    }
+    &-block {
+        padding-right: 20px;
+        margin:  0 auto;
+        width: 1001px;
+        min-height: 103px;
+        border: 0.5px solid #E7E7E7;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 11px;
+        &__left {
+            display: flex;
+            align-items: center;
+            img {
+                width: 113px;
+                height: 103px;
+                object-fit: cover;
+            }
+            h5 {
+                font-size: 18px;
+                font-family: 'Roboto Regular';
+                color: $gray;
+                margin: 0;
+                margin-left: 19px;
+            }
+        }
+        .mobile-name, .mobile-quantity {
+            display: none;
+        }
+        &__right {
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 18px;
+                font-family: 'Roboto Regular';
+                margin-right: 40px;
+                margin-left: 39px;
+                &.size {
+                    font-family: 'Roboto Light';
+                    margin: 0;
+                }
+            }
+            .btn-gen {
+                width: 183px;
+                height: 35px;
+                img {
+                    display: none;
+                }
+            }
+            .close {
+                margin-left: 55px;
+                font-size: 12px;
+                font-family: 'Roboto Regular';
+                img {
+                    width: 10px;
+                    height: 10px;
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+}
