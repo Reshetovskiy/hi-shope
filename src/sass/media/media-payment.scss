@@ -163,17 +163,17 @@
             flex-wrap: wrap;
         }
         &__block {
-            width: 160px;
-            padding: 7px 7px 12px 7px;
+            width: wxs(160);
+            padding: wxs(7) wxs(7) wxs(12) wxs(7);
             min-height: 139px;
             border: 1px solid  #F1F1F1;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             &.active {
-                padding: 18px 14px 10px;
+                padding: wxs(18) wxs(14) wxs(10);
                 background: #CEAE50;
-                width: 160px;
+                width: wxs(160);
                 .payment__block-name {
                     font-size: 14px;
                     color: #FFFFFF;
@@ -190,8 +190,8 @@
             &_first {
                 border: none;
                 min-height: auto;
-                width: 320px;
-                padding: 11px 23px 12px 15px;
+                width: wxs(320);
+                padding: wxs(11) wxs(23) wxs(12) wxs(15);
                 .payment__block-name {
                     margin-bottom: 16px;
                 }
@@ -248,12 +248,12 @@
             align-items: flex-start;
         }
         &__block {
-            padding: 11px 7px 16px 10px;
+            padding: wxs(11) wxs(7) wxs(16) wxs(10);
             display: block;
             justify-content: space-between;
             border: 1px solid #F1F1F1;
             border-radius: 0;
-            width: 320px;
+            width: wxs(320);
             min-height: 229px;
             height: 371px;
             &:first-child {
@@ -262,7 +262,7 @@
             }
             &:last-child {
                 .delivery__block-text {
-                    margin-bottom: 20px;
+                    margin-bottom: 50px;
                     &:last-child {
                         margin-bottom: 0;
                     }
@@ -281,13 +281,13 @@
             }
             &-right {
                 position: relative;
-                top: -285px;
+                top: -277px;
             }
             &-text {
                 text-align: left;
                 font-size: 14px;
                 font-family: 'Roboto Regular';
-                margin-bottom: 51px;
+                margin-bottom: 49px;
                 &_inner {
                     font-size: 12px;
                     color: #AC9349;

@@ -1,0 +1,82 @@
+.question {
+    &__wrapper {
+        width: 1005px;
+        margin: 0 auto;
+        margin-top: 44px;
+        min-height: 800px;
+        margin-bottom: 100px;
+    }
+    &__name {
+        font-size: 22px;
+        font-family: 'Roboto Regular';
+        margin-bottom: 56px;
+        span {
+            display: block;
+        }
+    }
+    &__form {
+        margin-bottom: 37px;
+        .form-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        label {
+            font-size: 14px;
+            color: #6A6A6A;
+            font-family: 'Roboto Light';
+        }
+        input {
+            width: 291px;
+            height: 35px;
+        }
+        textarea {
+            width: 673px;
+            height: 115px;
+        }
+        button {
+            width: 254px;
+            height: 46.57px;
+            margin-top: 18px;
+
+        }
+    }
+    &__content {
+        &-name {
+            font-size: 14px;
+            font-family: 'Roboto Regular';
+        }
+        &-question {
+            border: 2px solid #F9F9F9;
+            border-radius: 5px;
+            padding: 20px 18.5px 20px 14px;
+        }
+        &-block {
+            margin-bottom: 21px;
+            border: 2px solid #F9F9F9;
+            border-radius: 5px;
+            .question__content-question {
+                border: none;
+            }
+        }
+        &-answer {
+            background: #F9F9F9;
+            border-radius: 5px;
+            padding: 19px 15px 17px;
+        }
+        &-date {
+            font-size: 14px;
+            font-family: 'Roboto Light';
+        }
+        &-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        &-text {
+            font-size: 14px;
+            font-family: 'Roboto Light';
+            line-height: 17px;
+        }
+    }
+}

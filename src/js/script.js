@@ -196,6 +196,10 @@
             minimumResultsForSearch: -1
         })
 
+        $('.select-personal').select2({
+            minimumResultsForSearch: -1
+        })
+
         $('.select-filter').select2({
             dropdownCssClass: 'select-filter'
         });
