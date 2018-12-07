@@ -65,18 +65,7 @@
 
                 }
                 .select2 {
-                    border: 1px solid #ccc;
                     width: 291px !important;
-                    height: 35px;
-                    padding: 0 3px 1px 3px;
-                    .selection {
-                        .select2-selection {
-                            &__arrow {
-                                display: block;
-                                background: url('./img/down.png');
-                            }
-                        }
-                    }
                 }
             }
             .textarea-group {
@@ -86,7 +75,6 @@
                 width: 620px;
                 .textarea-group__name {
                     font-family: 'Roboto Light';
-                    margin-left: 15px;
                 }
                 textarea {
                     background: #f5f5f5;
