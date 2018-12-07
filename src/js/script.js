@@ -197,17 +197,22 @@
         })
 
 
-        $('.select-filter').select2({
-            minimumResultsForSearch: -1
-        })
+        // $('.select-filter').select2({
+            
+        // })
 
         $('.select-personal').select2({
             minimumResultsForSearch: -1
         })
 
         $('.select-filter').select2({
-            dropdownCssClass: 'select-filter'
+            dropdownCssClass: 'select-two',
+            minimumResultsForSearch: -1
         });
+        $('.js-example-basic-single').select2({
+  
+        });
+
     })
 
     //=require partials/plugins.js
