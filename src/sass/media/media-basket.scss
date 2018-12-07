@@ -44,6 +44,9 @@
                     &__top-line {
                         margin-top: 5px;
                         padding-bottom: 7px;
+                        .form-group_select {
+                            width: 100%;
+                        }
                     }
                     .button-line {
                         .btn-gen {
@@ -61,7 +64,9 @@
                     width: 95%;
                     margin: 0 auto;
                     &__top-line {
-
+                        .form-group_select {
+                            width: 100%;
+                        }
                     }
                     &__content {
                         .button-hour  {
