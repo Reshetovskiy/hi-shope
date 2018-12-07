@@ -235,8 +235,8 @@
             minimumResultsForSearch: -1
         })
 
-        $('.js-example-basic-single').select2({
-  
+        $('.select-basket').select2({
+            dropdownCssClass: 'select-basket-dropdown',
         });
 
     })
