@@ -29,7 +29,7 @@
                 }
             }
         }
-        .select-filter {
+        .select-two {
             &__name {
                 font-size: 14px;
                 font-family: 'Roboto Light';
@@ -99,7 +99,7 @@
     }
 }
 
-.select-filter {
+.select-two {
     border: 0.75px solid #F2F2F2;
     .select2-search__field {
         display: none;
@@ -120,6 +120,7 @@
 }
 .select2-container--default {
     width: 126px !important;
+    .select-two {
     .select2-selection--single {
         border: 0.75px solid #F2F2F2;
         height: 22px;
@@ -190,4 +191,5 @@
         background: $hover;
         color: white;
     }
+}
 }

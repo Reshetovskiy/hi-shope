@@ -1,0 +1,25 @@
+<!--=include partials/layouts/begin.html -->
+    <!--=include partials/header.html -->
+        <div class="basket-container">
+        <div class="bready-crumbs">
+            <ul class="nav-menu">
+                <li><a href="#">Хлебные</a>/</li>
+                <li><a href="#">Крошки</a>/</li>
+                <li><span>Здесь</span></li>
+             </ul>
+            </div>
+            <div class="g-wrapper-basket">
+                <div class="g-wrapper-basket__left">
+                    <h2 class="g-left__title"> Ваша корзина</h2>
+                    @@for (var i = 0; i < 3; i++) {
+                        <!--=include partials/basket-product.html -->
+                       }
+                    <div class="wrapper-apply">
+                        <input type="input" class="input" placeholder="Промокод">
+                        <button class="btn-gen">Применить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=include partials/footer.html -->
+<!--=include partials/layouts/end.html -->

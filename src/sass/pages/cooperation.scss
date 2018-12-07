@@ -12,12 +12,104 @@
             color: #fff;
         }
     }
-    &.after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-color: rgba($color: #000000, $alpha: .5)
-
-    }
 }
+ .body-section {
+     width: 100%;
+     .body-wrapper {
+         margin: 42px auto 0 auto;
+        //  width: 50%;
+         &__title {
+             text-align: center;
+             font-size: 22px;
+         }
+         .wrapper-content {
+             margin: 55px 0 0 0;
+            .input-group {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto 15px auto;
+                width: 291px;
+                // justify-content: flex-start;
+                &__name {
+                   margin: 0 0 13px 0;
+                   font-family: 'Roboto Light';
+                   font-style: normal;
+                //    font-weight: 200;
+                   line-height: normal;
+                   font-size: 14px;
+                   color: $gray;
+                }
+                .input {
+                    width: 291px;
+                    height: 35px;
+                    font-family: 'Roboto Light';
+                    font-size: 14px;
+                }
+                textarea {
+                    width: 620px;
+                    height: 135px;
+
+                }
+            }
+            .select-group {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto 35px auto;
+                width: 291px;
+                background: #fff;
+                .select-group__name {
+                    margin-bottom: 5px;
+                    font-family: 'Roboto Light';
+                }
+                .input {
+
+                }
+                .select2 {
+                    border: 1px solid #ccc;
+                    width: 291px !important;
+                    height: 35px;
+                    padding: 0 3px 1px 3px;
+                    .selection {
+                        .select2-selection {
+                            &__arrow {
+                                display: block;
+                                background: url('./img/down.png');
+                            }
+                        }
+                    }
+                }
+            }
+            .textarea-group {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto 36px auto;
+                width: 620px;
+                .textarea-group__name {
+                    font-family: 'Roboto Light';
+                    margin-left: 15px;
+                }
+                textarea {
+                    background: #f5f5f5;
+                    width: 620px;
+                    height: 135px;
+                    border-radius: 5px;
+                }
+                &__consent {
+                    margin-top: 19px;
+                    font-family: 'Roboto Light';
+                    font-size: 14px;
+                    font-style: normal;
+                }
+            }
+            .button-cooperation {
+                width: 254px;
+                margin: 0px auto 43px auto;
+                .submit-btn {
+                    margin: 0  auto;
+                    width: 254px;
+                    height: 47px;
+                }
+            }
+         }
+     }
+ }

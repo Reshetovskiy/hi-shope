@@ -1,0 +1,170 @@
+.head-section-faq {
+    .container-head {
+        height: 514px;
+        width: 100%;
+        position: relative;
+        background: $head-fon;
+        &__title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #000;
+            font-size: 48px;
+            width: 302px;
+            text-align: center;
+            font-family: 'Roboto Regular';
+        }
+    }
+}
+.wrapper-body-faq {
+    width: 100%;
+    .title-faq {
+        margin: 30px auto 40px auto;
+        text-align: center;
+        width: 500px;
+        font-size: 22px;
+    }
+    .total-wrapper {
+        width: 1000px;
+        margin: 0  auto;
+        display: flex;
+        &__left {
+            .list {
+                &__item {
+                    display: flex;
+                    margin: 0 0 31px 0;
+                    .row-link {
+                        display: flex;
+                        flex-direction: column;
+                        &__text {
+                            font-family: 'Open Sans';
+                            font-size: 18px;
+                            margin: 0 0 13px 0;
+                        }
+                        .hide {
+                            font-family: 'Open Sans Light';
+                            font-size: 14px;
+                        }
+                    }
+                    &__arrow {
+
+                    }
+                }
+            }
+        }
+        &__right {
+            width: 420px;
+            margin-left: 154px;
+            .wrapper-inner {
+                margin: 10px 0 10px 0;
+                &__title {
+                    font-family: 'Open Sans';
+                    font-size: 18px;
+                }
+                &__text {
+                    font-size: 14px;
+                    font-family: 'Open Sans Light';
+                    .down-content {
+                        margin-top: 20px;
+                    }
+
+                }
+            }
+            .wrapper-form {
+                .input-group {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto 15px auto;
+                    width: 291px;
+                    &__name {
+                       margin: 0 0 13px 0;
+                       font-family: 'Roboto Light';
+                       font-style: normal;
+                       line-height: normal;
+                       font-size: 14px;
+                       color: $gray;
+                    }
+                    .input {
+                        width: 291px;
+                        height: 35px;
+                        font-family: 'Roboto Light';
+                        font-size: 14px;
+                    }
+                    textarea {
+                        width: 620px;
+                        height: 135px;
+    
+                    }
+                }
+                .select-group {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto 35px auto;
+                    width: 291px;
+                    background: #fff;
+                    .select-group__name {
+                        margin-bottom: 5px;
+                        font-family: 'Roboto Light';
+                    }
+                    .input {
+    
+                    }
+                    .select2 {
+                        border: 1px solid #ccc;
+                        width: 291px !important;
+                        height: 32px;
+                        padding: 0 3px 0px 3px;
+                        .selection {
+                            .select2-selection {
+                                &__arrow {
+                                    display: block;
+                                    background: url('./img/down.png');
+                                }
+                            }
+                        }
+                    }
+                }
+                .textarea-group {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto 36px auto;
+                    width: 620px;
+                    .textarea-group__name {
+                        font-family: 'Roboto Light';
+                        margin-left: 15px;
+                    }
+                    textarea {
+                        background: #f5f5f5;
+                        width: 620px;
+                        height: 135px;
+                        border-radius: 5px;
+                    }
+                    // &__consent {
+                    //     margin: 19px auto 0 auto;
+                    //     font-family: 'Roboto Light';
+                    //     font-size: 14px;
+                    //     font-style: normal;
+                    //     width: 254px;
+                    // }
+                }
+                .button-cooperation {
+                    width: 254px;
+                    margin: 0px auto 43px auto;
+                    &__consent {
+                         margin: 0 auto 35px auto;
+                        font-family: 'Roboto Light';
+                        font-size: 14px;
+                        font-style: normal;
+                        width: 254px;
+                    }
+                    .submit-btn {
+                        margin: 0  auto;
+                        width: 254px;
+                        height: 47px;
+                    }
+                }
+            }
+        }
+    }
+}
