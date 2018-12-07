@@ -11,7 +11,7 @@
             <div class="g-wrapper-basket">
                 <div class="g-wrapper-basket__left">
                     <h2 class="g-left__title"> Ваша корзина</h2>
-                    @@for (var i = 0; i < 3; i++) {
+                    @@for (var i = 0; i < 4; i++) {
                         <!--=include partials/basket-product.html -->
                        }
                     <div class="wrapper-apply">
@@ -62,6 +62,7 @@
                         <div class="text-block">
                             <div class="text-block__name"> Забрать заказ в Name Spot по адресу</div>
                             <div class="text-block__adress">  Свердловская обл., г. Екатеринбург, ул. Энгельса, д. 63</div>
+                           <div class="this-hour"> Часы работы: </div>
                             <div class="hour-work">
                                 <p class="hour-work__text"><span class="hour-work__text-left">Чт, 8 ноября </span><span class="hour-work__text-right">10:00–19:00 </span></p>
                                 <p class="hour-work__text"><span class="hour-work__text-left">Пт, 9 ноября </span><span class="hour-work__text-right">10:00–19:00 </span></p>
@@ -75,7 +76,7 @@
                     </div>
                     <div class="bottom-block-right">
                         <div class="bottom-block-right__top-line">
-                            <h5 class="delivery-title">Забрать заказ в Name Spot по адресу: </h5>
+                            <h5 class="delivery-title">Оплата </h5>
                             <select class="js-example-basic-single input" name="state">
                                 <option value="AL">  Екатерибург, Свердловская обл.  </option>
                                 <option value="WY">Московская</option>
@@ -84,10 +85,44 @@
                         <div class="bottom-block-right__content">
                                 <p class="hour-work__text"><span class="hour-work__text-left">Товары  </span><span class="hour-work__text-right">549 руб  </span></p>
                                 <p class="hour-work__text"><span class="hour-work__text-left">Доставка  </span><span class="hour-work__text-right"> 149 руб </span></p>
+                                <button class="btn-gen">Подтвердить заказ </button>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="g-wrapper-recomendation">
+                    <h2 class="g-wrapper-recomendation__title"> Рекомендуем </h2>
+                    <div class="swiper-container swiper-container-recomendation ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!--=include partials/gen-block.html -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!--=include partials/gen-block-active.html -->
+                            </div>
+                            <div class="swiper-slide swiper-slide-inner">
+                                <!--=include partials/gen-block.html -->
+                            </div>
+                            <div class="swiper-slide swiper-slide-inner">
+                                <!--=include partials/gen-block-active.html -->
+                            </div>
+                            <div class="swiper-slide swiper-slide-inner">
+                                <!--=include partials/gen-block.html -->
+                            </div>
+                            <div class="swiper-slide swiper-slide-inner">
+                                <!--=include partials/gen-block-active.html -->
+                            </div>
+                            <div class="swiper-slide swiper-slide-inner">
+                                <!--=include partials/gen-block.html -->
+                            </div>
+                            <div class="swiper-slide swiper-slide-inner">
+                                    <!--=include partials/gen-block-active.html -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"> <img src="./img/arrow-right.png" alt=""> </div>
+                    <div class="swiper-button-prev"> <img src="./img/arrow-left.png" alt=""></div>
+                </div>
         </div>
         <!--=include partials/footer.html -->
 <!--=include partials/layouts/end.html -->

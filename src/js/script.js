@@ -49,6 +49,19 @@
                 jQuery('.swiper-slide').removeAttr('style');            
             }        
         }
+        var HomeBottom = new Swiper ('.swiper-container-recomendation', {
+            slidesPerView: 'auto',
+            dynamicMainBullets: 3,
+            slidesPerView: 3,
+            pagination: {
+              el: '.swiper-pagination-bottom',
+              clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        })
         initSwiper();
 
         $('.home-content__head-mobile button').on('click', function(e){

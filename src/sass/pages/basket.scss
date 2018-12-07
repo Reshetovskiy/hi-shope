@@ -9,7 +9,9 @@
         display: flex;
         &__left {
             .g-left__title {
-                margin-bottom: 30px;
+                margin-top: 20px;
+                margin-bottom: 29px;
+                font-size: 24px;
             }
             .wrapper-apply {
                 display: flex;
@@ -17,6 +19,7 @@
                 width: 475px;
                 padding: 12px 17px 12px 10px;
                 border: 1px solid #ECECEC;
+                margin: 10px 0 0 0;
                 .input {
                     width: 275px;
                     height: 32px;
@@ -31,7 +34,7 @@
         }
         &__right {
             .top-block-right {
-                margin-top: 67px;
+                margin-top: 72px;
                 padding: 8px 0px 18px 26px;
                  display: block;
                  border: 1px solid #ECECEC;
@@ -60,8 +63,10 @@
             .middle-block-right {
                 border: 1px solid #ECECEC;
                 padding-left: 26px;
+                padding-bottom: 20px;
+                border-bottom: 0;
                 &__top-line {
-                    padding: 13px 17px 12px 26px;
+                    padding: 13px 17px 0px 10px;
                     display: flex;
                     justify-content: space-between;
                     .delivery-title {
@@ -77,7 +82,8 @@
                         color: $general;
                         background: #fff;
                         border: 1px solid $general;
-                        margin: 12px 6px 0  0;
+                        padding-left: 10px;
+                        margin: 12px 5px 0  0px;
                         border-radius: 5px;
                         &__top-span {
                             font-size: 13px;
@@ -94,20 +100,31 @@
                     }
                 }
                 .text-block {
+                    margin-top: 10px;
                     &__name {
                         font-size: 14px;
                         font-family: 'Roboto Regular';
                         color: $gray;
+                        margin-bottom: 5px;
                     }
                     &__adress {
                         font-size: 14px;
                         font-family:  'Roboto Light';
                     }
+                    .this-hour {
+                        font-size: 14px;
+                        font-family: 'Roboto Regular';
+                        color: $gray;
+                        margin-top: 12px;
+                    }
                     .hour-work {
+                        margin-top: 8px;
+                        // margin-bottom: 20px;
                         &__text {
                             display: flex;
                             justify-content: space-between;
                             font-size: 14px;
+                            margin-bottom: 3px;
                             font-family: "Roboto Light";
                         }
                     }
@@ -115,6 +132,7 @@
                         font-size: 14px;
                         font-family: 'Roboto Regular';
                         color: $gray;
+                        margin-top: 7px;
                     }
                     .btn-gen {
                         border: 1px solid $general;
@@ -122,9 +140,70 @@
                         background: #fff;
                         width: 162px;
                         height: 32px;
+                        margin-top: 5px;
                     }
                 }
             }
+            .bottom-block-right {
+                border: 1px solid #ECECEC;
+                &__top-line {
+                    padding: 10px 17px 10px 26px; 
+                    // border-top: 1px solid #ECECEC;
+                    border-bottom: 1px solid #ECECEC;
+                    display: flex;
+                    justify-content: space-between;
+                    .delivery-title {
+                        font-size: 16px;
+                        font-family: 'Roboto Regular';
+                    }
+                }
+                &__content {
+                    padding: 0px 17px 22px 26px;
+                    .hour-work__text {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 14px;
+                        font-family: 'Roboto Light';
+                    }
+                    .btn-gen {
+                        font-size: 13px;
+                        font-family:  'Roboto Regular';
+                        margin: 21px 0 0 146px;
+                        width: 203px;
+                        height: 37px;
+                    }
+                }
+            }
+        }
+    }
+    .g-wrapper-recomendation {
+        position: relative;
+        padding-left: 85px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        .g-wrapper-recomendation__title {
+            font-size: 24px;
+            text-align: center;
+            margin: 20px 0 40px 0
+        }
+        .swiper-container {
+            .swiper-slide {
+                width: 240px;
+            }
+        }
+        .swiper-button-prev {
+            transform: scale(1.4);
+            background-image: none;
+            left: 33px;
+            top: 295px;
+            position: absolute;
+        }
+        .swiper-button-next {
+            transform: scale(1.4);
+            background-image: none;
+            right: -20px;
+            top: 295px;
+            position: absolute;
         }
     }
 }
@@ -134,8 +213,8 @@
     margin: 10px;
     display: flex;
     border: 1px solid #ECECEC;
-    padding: 15px;
-    width: 475px;
+    padding: 0px 15px 0px 15px;
+    width: 485px;
     &__left {
 
     }
@@ -149,6 +228,11 @@
                 .content-title {
                     font-size: 16px;
                     font-family: 'Roboto Regular';
+                }
+            }
+            span {
+                svg {
+                    font-size: 10px;
                 }
             }
         }
