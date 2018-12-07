@@ -12,6 +12,7 @@
                 margin-top: 20px;
                 margin-bottom: 29px;
                 font-size: 24px;
+                font-family: 'Roboto Medium';
             }
             .wrapper-apply {
                 display: flex;
@@ -30,6 +31,9 @@
                     height: 32px;
                     margin-left: 10px;
                     border-radius: 5px;
+                    img {
+                        display: none;
+                    }
                 }
             }
         }
@@ -349,7 +353,15 @@
                     width: 53px;
                     height: 35px;
                 }
+                &-mobile {
+                    display: none;
+                }
             }
         }
+    }
+}
+.name-input-block__wrapper {
+    .mob-item {
+        display: none;
     }
 }
