@@ -19,7 +19,7 @@
                 width:w( 475);
                 padding: w(12) w(17) w(12) w(10);
                 border: w(1) solid #ECECEC;
-                margin: w(10) 0 0 0;
+                margin: w(10) 0 0 w(6);
                 .input {
                     width: w(275);
                     height: w(32);
@@ -28,7 +28,7 @@
                     width: w(162);
                     height: w(32);
                     margin-left: w(10);
-                    border-radius: 0;
+                    border-radius: w(7);
                 }
             }
         }
@@ -282,15 +282,18 @@
 }
 @media #{$sm} {  
     .basket-container {
+        max-width: 100%;
+        overflow: hidden;
         .g-wrapper-basket {
             display: block;
             &__left {
                 .g-left__title {
-                    width: 98%;
+                    width: 95%;
                     text-align: left;
                 }
                 .wrapper-apply {
-                    width: 100%;
+                    margin: 13px auto 0 auto;
+                    width: 95%;
                     .input {
                         width: 100%;
                     }
@@ -310,17 +313,24 @@
                     }
                 }
                 .middle-block-right {
+                    &__top-line {
+                        padding-bottom: 14px;
+                    }
                     .button-line {
                         .btn-gen {
                             width: 227px;
                             margin: 0 8px 0 0 ;
                         }
                     }
+                    .text-block {
+                        width: 98%;
+                        margin: 0 auto;
+                    }
                 }
                 .bottom-block-right {
                     &__content {
                         .button-hour  {
-                            width: 100%;
+                            width: 95%;
                             display: flex;
                             justify-content: center;
                             .btn-gen {
@@ -331,10 +341,19 @@
                 }
             }
         }
+        .g-wrapper-recomendation {
+            .swiper-container-recomendation {
+                width: 80%;
+                margin: 0 20px 0 20px;;
+            }
+            .swiper-button-next {
+                right: 30px;
+            }
+        }
     }
     .unit-basket {
         margin: 0 auto;
-        width: 98%;
+        width: 95%;
         &__right {
             width: 100%;
             .top-line {
