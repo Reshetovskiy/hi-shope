@@ -58,6 +58,8 @@
                 }
             }
             .middle-block-right {
+                border: 1px solid #ECECEC;
+                padding-left: 26px;
                 &__top-line {
                     padding: 13px 17px 12px 26px;
                     display: flex;
@@ -74,10 +76,52 @@
                         height: 48px;
                         color: $general;
                         background: #fff;
+                        border: 1px solid $general;
+                        margin: 12px 6px 0  0;
+                        border-radius: 5px;
                         &__top-span {
                             font-size: 13px;
                             font-family: 'Roboto Regular';
                         }
+                        &__down-span {
+                            font-size: 13px;
+                            font-family: 'Roboto Light';
+                        }
+                        &.active {
+                            background: $general;
+                            color: #fff;
+                        }
+                    }
+                }
+                .text-block {
+                    &__name {
+                        font-size: 14px;
+                        font-family: 'Roboto Regular';
+                        color: $gray;
+                    }
+                    &__adress {
+                        font-size: 14px;
+                        font-family:  'Roboto Light';
+                    }
+                    .hour-work {
+                        &__text {
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: 14px;
+                            font-family: "Roboto Light";
+                        }
+                    }
+                    &__term {
+                        font-size: 14px;
+                        font-family: 'Roboto Regular';
+                        color: $gray;
+                    }
+                    .btn-gen {
+                        border: 1px solid $general;
+                        color: $general;
+                        background: #fff;
+                        width: 162px;
+                        height: 32px;
                     }
                 }
             }
