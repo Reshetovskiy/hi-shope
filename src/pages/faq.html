@@ -19,7 +19,7 @@
                                         Заполните заявку здесь и с Вами свяжется коммерческий представитель. 
                                 </span>
                             </p>
-                            <span class="row-item__arrow">
+                            <span class="row-link__arrow">
                                     <img src="./img/down.png" alt="" class="img-first" >
                             </span>
                         </li>
@@ -85,12 +85,14 @@
                             <input class="input" placeholder="Трунов Артём Алексеевич" type="input">
                             </div>
                             <div class="select-group">
-                                <p class="select-group__name"> Тема сообщения </p>
-                                <select class="js-example-basic-single" name="state">
-                                    <option value="AL">   </option>
-                                        
-                                    <option value="WY">Wyoming</option>
-                                </select>
+                                <div class="form-group form-group_select">
+                                    <p class="input-group__name">Тема сообщения </p>
+                                    <select name="" class="select-personal">
+                                        <option value="">433321, ул. Шишкина, 7</option>
+                                        <option value="">433321, ул. Шишкина, 7</option>
+                                        <option value="">433321, ул. Шишкина, 7</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="input-group">
                                 <p class="input-group__name">Город, область</p>
@@ -114,11 +116,13 @@
                                 </div> -->
                             </div>
                             <div class="button-cooperation">
-                                    <div class="button-cooperation__consent">
-                                            <p>
-                                            Я согласен на обработку предоставленных мною данных
-                                            </p>
-                                        </div>
+                                <div class="button-cooperation__consent">
+                                    <label>
+                                        <input class="checkbox" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <p class="label">Я согласен на обработку предоставленных мною данных</p>
+                                    </label>
+                                </div>
                                 <button class="submit-btn btn-gen">
                                         Отправить
                                 </button>

@@ -21,9 +21,6 @@
         font-size: 24px;
         font-family: 'Roboto Medium';
         margin-bottom: 3px;
-        &_inner {
-            margin-bottom: 43px;
-        }
     }
     &__text {
         font-size: 16px;
@@ -87,6 +84,7 @@
             }
             &_select {
                 margin-bottom: 45px;
+                
             }
         }
         .form-block {
@@ -97,6 +95,9 @@
                 font-family: 'Roboto Light';
                 text-transform: uppercase;
                 margin-bottom: 20px;
+                &_inner {
+                    margin-bottom: 43px;
+                }
             }
             margin-right: 70px;
             &:last-child {
@@ -144,6 +145,76 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 z-index: 2;
+            }
+        }
+    }
+}
+
+.select-dropdown {
+    border: 0.75px solid #F2F2F2;
+    .select2-search--dropdown {
+        padding: 0;
+    }
+    .select2-results__option {
+        padding: 6px 10px;
+        position: relative;
+        border-bottom: 1px solid #F2F2F2;
+        &:last-child {
+            border-bottom: none;
+        }
+        &--highlighted[aria-selected] {
+            background: #F9F9F9;
+            color: #AEAEAE;
+        }
+    }
+    .select2-results__option {
+        font-size: 14px;
+        font-family: 'Roboto Light';
+        color: #AEAEAE;
+    }
+    .select2-results__option[aria-selected=true] {
+        background: $hover;
+        color: white;
+    }
+}
+
+.form-group_select {
+    .select2-container--default {
+        width: 100% !important;
+        border-radius: 5px;
+        &.select2-container--open {
+            .select2-selection__rendered {
+                position: relative;
+                &:before {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .select2-selection--single {
+            border: 1px solid #E7E7E7;
+            border-radius: 5px;
+            height: 35px;
+            &:focus, &:hover {
+                outline: none;
+            }
+            .select2-selection__rendered {
+                position: relative;
+                font-size: 14px;
+                line-height: 34px;
+                color: #6A6A6A;
+                font-family: 'Roboto Light';
+                &:before {
+                    width: 21px;
+                    height: 21px;
+                    position: absolute;
+                    right: 10px;
+                    top: 7px;
+                    content: '';
+                    background-image: url('../img/down.png');
+                }
+            }
+            .select2-selection__arrow {
+                display: none;
             }
         }
     }

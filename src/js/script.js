@@ -152,6 +152,12 @@
         })
 
 
+        $('.list__item').on('click', '.row-link__arrow', function () {
+            $(this).parent().find('.hide').fadeToggle(200);
+            $(this).parent().find('.row-link__arrow').toggleClass('active');
+        })
+
+
         $('.favorites-info').on('click', '.close', function () {
             $(this).parent().parent().fadeOut(200);
         })
@@ -214,13 +220,15 @@
         // })
 
         $('.select-personal').select2({
+            dropdownCssClass: 'select-dropdown',
             minimumResultsForSearch: -1
         })
 
         $('.select-filter').select2({
             dropdownCssClass: 'select-two',
             minimumResultsForSearch: -1
-        });
+        })
+
         $('.js-example-basic-single').select2({
   
         });
