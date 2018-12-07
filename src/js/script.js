@@ -140,9 +140,8 @@
 
 
         $('.favorites-info').on('click', '.close', function () {
-            $(this).parent().children('.favorites-block').slideDown(300);
+            $(this).parent().parent().fadeOut(200);
         })
-
 
 
         $('.menu').on('click', '.menu-btn-1', function (e) {
