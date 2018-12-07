@@ -17,6 +17,9 @@ $danger: #E32727;
 $head-fon: #C4C4C4;
 $basket-bg: #F7F7F7;
 
+@function w($value) {
+    @return ($value*100vw)/1920
+};
 // : 768
 @function wsm($value) {
     @return ($value*100vw)/768

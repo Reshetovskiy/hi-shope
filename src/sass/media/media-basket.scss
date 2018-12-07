@@ -280,3 +280,72 @@
     }
 }
 }
+@media #{$sm} {  
+    .basket-container {
+        .g-wrapper-basket {
+            display: block;
+            &__left {
+                .g-left__title {
+                    width: 98%;
+                    text-align: left;
+                }
+                .wrapper-apply {
+                    width: 100%;
+                    .input {
+                        width: 100%;
+                    }
+                    .btn-gen {
+                        
+                    }
+                }
+            }
+            &__right {
+                .top-block-right {
+                    .input-block {
+                        .input-group {
+                            .input {
+                                width: 212px;
+                            }
+                        }
+                    }
+                }
+                .middle-block-right {
+                    .button-line {
+                        .btn-gen {
+                            width: 227px;
+                            margin: 0 8px 0 0 ;
+                        }
+                    }
+                }
+                .bottom-block-right {
+                    &__content {
+                        .button-hour  {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            .btn-gen {
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .unit-basket {
+        margin: 0 auto;
+        width: 98%;
+        &__right {
+            width: 100%;
+            .top-line {
+                width: auto;
+            }
+            .middle {
+                width: auto;
+            }
+            .bottom-line {
+                width: auto;
+            }
+        }
+    }
+}
