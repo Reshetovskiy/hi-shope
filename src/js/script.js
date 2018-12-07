@@ -50,6 +50,7 @@
             }        
         }
         var HomeBottom = new Swiper ('.swiper-container-recomendation', {
+           
             slidesPerView: 'auto',
             dynamicMainBullets: 3,
             slidesPerView: 3,
@@ -60,7 +61,12 @@
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-            }
+            },
+            breakpoints: {
+                1180: {
+                  slidesPerView: 2
+                }
+            },    
         })
         initSwiper();
 
