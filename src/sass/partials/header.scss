@@ -1,7 +1,6 @@
 .header {
     position: relative;
     &__wrapper {
-       
         width: 1072px;
         height: 49px;
         margin: 0 auto;
@@ -16,11 +15,26 @@
     }
     &__navbar {
         margin-right: 12px;
+        height: 100%;
+        nav {
+            height: 100%;
+        }
+        &-items {
+            height: 100%;
+        }
         ul {
             display: flex;
             align-items: center;
             li {
-                margin-right: 26.7px;
+                padding-right: 26.7px;
+                &:hover {
+                    .mobile-menu {
+                        display: flex;
+                    }
+                }
+                &.menu {
+                    height: 100%;
+                }
                 button {
                     display: none;
                 }
@@ -30,6 +44,9 @@
                     font-size: 14px;
                     text-decoration: none;
                     transition: .3s;
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
                     &:hover {
                         color: $general;
                     }
@@ -45,10 +62,11 @@
                 left: 0;
                 width: 100%;
                 display: flex;
+                display: none;
                 justify-content: center;
                 background: #FBFBFB;
                 position: absolute;
-                top: 50px;
+                top: 49px;
                 align-items: flex-start;
                 z-index: 5;
                 ul {
@@ -198,7 +216,7 @@
 .header-modal {
     &__wrapper {
         position: relative;
-        z-index: 2;
+        z-index: 3;
         width: 361px;
         min-height: 250px;
         background: #FFFFFF;

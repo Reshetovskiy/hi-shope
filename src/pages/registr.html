@@ -8,33 +8,42 @@
             <div class="register__form">
                 <form action="#" id="register-validate" class="form">   
                     <div class="register__form-group">
-                        <input class="input" name="name" type="text" placeholder="Имя, фамилия">
+                        <label for="">Имя, фамилия</label>
+                        <input class="input" name="name" type="text">
+                        <span class="necessarily">Обязательное поле*</span>
                     </div>
                     <div class="register__form-group">
-                        <input class="input" name="mail" type="text" placeholder="E-mail">
+                        <label for="">E-mail</label>
+                        <input class="input" name="mail" type="text">
                     </div>
                     <div class="register__form-group">
-                        <input class="input" name="password" type="text" placeholder="Пароль">
+                        <label for="">Пароль</label>
+                        <input class="input" name="password" type="text">
                     </div>
                     <div class="register__form-group">
-                        <input class="input" name="password2" type="text" placeholder="Подтвердите пароль">
+                        <label for="">Подтвердите пароль</label>
+                        <input class="input" name="password2" type="text">
                     </div>
                     <div class="register__form-group">
+                        <label for="">Телефон <span>(Опционально)</span></label>
                         <input class="input" name="number" type="text" placeholder="+7 (999) 233-23-23">
                     </div>
-                    <div class="register__form-text">(Опционально)</div>
-                    <div class="register__form-group">
-                        <label>
-                            <input class="checkbox" type="checkbox" name="checkbox">
-                            <span class="checkbox-custom"></span>
-                            <span class="label">Подключить SMS-уведомления</span>
-                        </label>
-                        <p>Новости, акции, смена статуса заказа и многое другое.</p>
+                    <div class="register__form-group register__form-group_select">
+                        <label for="">Дата рождения<span>(Опционально)</span></label>
+                        <div class="group">
+                            <select name="" class="select-basket">
+                                <option value="">День</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+                            <select name="" class="select-basket">
+                                <option value="">Месяц</option>
+                                <option value="">февраль</option>
+                                <option value="">январь</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="register__form-group">
-                        <input class="input" type="text" placeholder="Дата рождения">
-                    </div>
-                    <div class="register__form-group">
+                    <div class="register__form-group register__form-group_check">
                         <label>
                             <input class="checkbox" type="checkbox" name="checkbox">
                             <span class="checkbox-custom"></span>
@@ -45,7 +54,7 @@
                         <label>
                             <input class="checkbox" type="checkbox" name="checkbox">
                             <span class="checkbox-custom"></span>
-                            <p class="label">Я даю согласие на обработку моих персональных данных в порядке и на <a href="#">условиях</a>, указанных в согласии.</p>
+                            <span class="label">Я даю согласие на обработку моих персональных данных на условиях, указанных в <a href="#"> политике конфиденциальности.</a></span>
                         </label>
                     </div>
                     <div class="register__form-group">

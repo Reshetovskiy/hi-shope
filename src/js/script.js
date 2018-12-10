@@ -17,7 +17,6 @@
             speed: 1000
         })
 
-
         var HomeBottom = new Swiper ('.swiper-container-bottom', {
             slidesPerView: 'auto',
             dynamicMainBullets: 3,
@@ -150,8 +149,6 @@
             $('.home-content__head-mobile button span').toggle()
         })
 
-
-        
         $('.menu').on('click', '.menu-btn', function (e) {
             e.preventDefault()
             $(this).parent().children('.mobile-menu').slideToggle(300);
@@ -174,12 +171,35 @@
             $(this).parent().children('.mobile-menu-1').slideToggle(300);
         })
 
-        $('.mobile-menu').hide()
+        $(document).on('mouseup', function (e){ 
+            var div = $(".pay"); 
+            if (!div.is(e.target) && div.has(e.target).length === 0) { 
+              $(".header-pay").slideUp(300); 
+            }
+        })
+        $(document).on('mouseup', function (e){ 
+            var div = $(".pay"); 
+            if (!div.is(e.target) && div.has(e.target).length === 0) { 
+              $(".header-pay").slideUp(300); 
+            }
+        })
+        $(document).on('mouseup', function (e){ 
+            var div = $(".user"); 
+            if (!div.is(e.target) && div.has(e.target).length === 0) { 
+              $(".header-user").slideUp(300); 
+            }
+        })
+        $(document).on('mouseup', function (e){ 
+            var div = $(".like"); 
+            if (!div.is(e.target) && div.has(e.target).length === 0) { 
+              $(".header-like").slideUp(300); 
+            }
+        })
 
-        
-        $('.menu').on('click', '.dekstop-menu', function (e) {
-            e.preventDefault()
-            $(this).parent().children('.mobile-menu').slideToggle(300);
+        $('.home__head').on('click', function(){
+            $(".header-like").slideUp(300); 
+            $(".header-user").slideUp(300); 
+            $(".header-pay").slideUp(300); 
         })
 
         $('.product-filter').on('click', '.product-filter__name', function () {
@@ -219,11 +239,6 @@
         $('label').on('click', function (){
             $(this).toggleClass('active')
         })
-
-
-        // $('.select-filter').select2({
-            
-        // })
 
         $('.select-personal').select2({
             dropdownCssClass: 'select-dropdown',
