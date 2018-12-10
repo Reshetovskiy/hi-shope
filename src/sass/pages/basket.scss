@@ -40,7 +40,7 @@
         }
         &__right {
             .top-block-right {
-                margin-top: 72px;
+                margin-top: 76px;
                 padding: 8px 0px 18px 26px;
                  display: block;
                  border: 1px solid #ECECEC;
@@ -378,6 +378,7 @@
             width: 330px;
             &__left {
                 display: flex;
+                align-items: flex-end;
                 margin-top: 15px;
                 &-one {
                     font-family: 'Roboto Light';

@@ -1,0 +1,23 @@
+@media #{$xs} {
+    .modal-name  {
+        .wrapper-name  {
+            width: 320px;
+            .content {
+                .input-group {
+                    padding-left: 21px;
+                    input {
+                        width: 276px;
+                    }
+                }
+            }
+            .bottom {
+                width: 276px;
+                margin: 0 auto;
+                .btn-gen {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+}
