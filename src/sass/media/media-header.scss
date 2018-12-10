@@ -19,12 +19,13 @@
             margin-top: 20px;
             ul {
                 li {
-                    margin-right: wsm(26.5);
+                    padding-right: wsm(26.5);
                     a {
                         font-size: 14px;
+                        align-items: flex-start;
                     }
                     &:last-child {
-                        margin-right: 0;
+                        padding-right: 0;
                     }
                 }
                 &.mobile-menu {
@@ -140,6 +141,11 @@
                         right: 15px;
                         top: 15px;
                     }
+                    &:hover {
+                        .mobile-menu {
+                            display: none;
+                        }
+                    }
                     a {
                         display: block;
                         width: 100%;
@@ -160,7 +166,6 @@
                     position: initial;
                     padding: 0;
                     background: transparent;
-                    display: block;
                     .menu-1 {
                         width: 100%;
                         margin-right: 0;
@@ -203,11 +208,11 @@
         }
         &__interface {
             &-item {
-                margin-right: 5.5px;
+                margin-right: 6px;
                 &:last-child {
                     display: none;
                 }
-                &:nth-child(4) {
+                &:nth-child(5) {
                     margin-right: 0;
                 }
             }
