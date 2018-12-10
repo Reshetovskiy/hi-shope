@@ -49,7 +49,10 @@
             .input-group {
                 display: block;
                 width: 333px;
-                margin: 0 auto 5px auto;
+                margin: 0 auto 23px auto;
+                &__name {
+                    font-family: 'Roboto Light';
+                }
                 input {
                     width: 333px;
                     height: 40px;
