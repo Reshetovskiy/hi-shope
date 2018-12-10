@@ -1,0 +1,69 @@
+.modal-name {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0, .8);
+    top: 0;
+    bottom: 0;
+    display: none;
+    .wrapper-name  {
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #AC9349;
+        width: 385px;
+        border-radius: 5px;
+        // display: block;
+        .close-top {
+            .circle {
+                width: 25px;
+                height: 25px;
+                border: rgb(0, 0, 0);
+                border-radius: 50%;
+                margin-left: auto;
+                margin-top: 5px;
+            }
+        }
+        .top {
+            margin-top: 5px;
+            margin-bottom: 24px;
+            display: block;
+            &__title {
+                font-family: 'Roboto Regular';
+                font-size: 24px;
+                text-align: center;
+            }
+            &__small-title {
+                width: 275px;
+                font-family: 'Roboto Light';
+                font-size: 18px;
+                text-align: center;
+                margin: 0  auto;
+                color: $gray;
+            }
+        }
+        .content {
+            margin-bottom: 24px;
+            .input-group {
+                display: block;
+                width: 333px;
+                margin: 0 auto 5px auto;
+                input {
+                    width: 333px;
+                    height: 40px;
+                }
+            }
+        }
+        .bottom {
+            text-align: center;
+            .btn-gen {
+                width: 333px;
+                height: 45px;
+                margin-bottom: 26px;
+            }
+        }
+    }
+}
+ 

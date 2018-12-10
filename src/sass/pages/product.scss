@@ -109,11 +109,11 @@
                 height: 21px;
             }
             .checkbox:checked + .checkbox-custom::before {
-                width: 14px;
-                height: 14px;
+                width: 13px;
+                height: 13px;
                 display: flex;
-                top: 3.5px;
-                left: 3.5px;
+                top: 4px;
+                left: 4px;
                 transform: translate(0);
             }
         }

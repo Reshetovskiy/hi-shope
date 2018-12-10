@@ -216,6 +216,15 @@
             $('.header-pay').slideUp(0)
         })
 
+        $('.btn-gen_1').on('click', function (e){
+            e.preventDefault()
+            $('.modal-name').fadeIn(500)
+        })
+        $('.circle').on('click', function (e){
+            e.preventDefault()
+            $('.modal-name').fadeOut(500)
+        })
+
         $('label').on('click', function (){
             $(this).toggleClass('active')
         })

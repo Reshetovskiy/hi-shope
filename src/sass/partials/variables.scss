@@ -16,6 +16,7 @@ $succes: #57B44F;
 $danger: #E32727;
 $head-fon: #C4C4C4;
 $basket-bg: #F7F7F7;
+$tooltip-bg: #f5f5f5;
 
 @function w($value) {
     @return ($value*100vw)/1920
