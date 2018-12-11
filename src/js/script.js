@@ -244,9 +244,9 @@
             e.preventDefault()
             $('.modal-name').fadeOut(500)
         })
-        $('.palitre').on('mouseover', function () {
-            $('.hint-palitre').fadeIn(500);
-        })
+        // $('.palitre').on('hover', function () {
+        //     $('.hint-palitre').fadeToggle(500);
+        // })
 
         $('label').on('click', function (){
             $(this).toggleClass('active')
