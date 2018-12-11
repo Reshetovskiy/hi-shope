@@ -4,6 +4,9 @@
         overflow: hidden;
         .bready-crumbs {
             margin: 30px 0 22px 20px;
+            .nav-menu {
+                margin-left: 4px;
+            }
         }
         .g-wrapper-basket {
             display: block;
@@ -43,8 +46,10 @@
                     &__top-line {
                         margin-top: 5px;
                         padding-bottom: 7px;
+                        
                         .form-group_select {
-                            width: 100%;
+                            border: 1px solid #CDCDCD;
+                            border-radius: 5px;
                         }
                     }
                     .button-line {
@@ -63,9 +68,7 @@
                     width: 95%;
                     margin: 0 auto 40px auto;
                     &__top-line {
-                        .form-group_select {
-                            width: 100%;
-                        }
+  
                     }
                     &__content {
                         .button-hour  {
@@ -144,6 +147,7 @@
                     margin-top: 8px;
                     margin-bottom: 17px;
                     font-size: 24px;
+                    margin-left: 0;
                 }
                 .wrapper-apply {
                     display: flex;
@@ -187,17 +191,28 @@
                 padding: 0 7px;
                 .top-block-right {
                     border-radius: 3px;
-                    margin-top: 72px;
                     padding: 15px 18px 18px 18px;
                      display: block;
                      border: 1px solid #ECECEC;
-                     margin-bottom: 15px;
-                     margin-top: 0px;
+                     margin: 15px auto 0 auto;
                      .name-input-block__wrapper {
                         
                      }
                      .form-group_select {
                          width: 300px;
+                         .select2-container--default {
+                            width: 100% !important;
+                            border-radius: 5px;
+                            &.select2-container--open {
+                                .select2-selection__rendered {
+                                    position: relative;
+                                    padding-right: 24px;
+                                    &:before {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
+                        }
                      }
                     .name-input-block {
                         font-size: 16px;
@@ -331,6 +346,12 @@
                         .delivery-title {
                             font-size: 16px;
                             font-family: 'Roboto Regular';
+                        }
+                        .form-group_select {
+                            width: 284px;
+                            margin: 0 auto;
+                            border: 1px solid #CDCDCD;
+                            border-radius: 5px;
                         }
                         .select2  {
                             width: 100%  !important;
