@@ -205,6 +205,13 @@
     a {
         width: 333px;
         height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $hover;
+        &:hover {
+            color: white;
+        }
     }
 }
 .header-like {
