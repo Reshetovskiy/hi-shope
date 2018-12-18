@@ -4,6 +4,11 @@
     $(document).ready(function () {
         svg4everybody({})
 
+        $('.home-content__head-like').on('click', function(e){
+            e.preventDefault()
+            $(this).toggleClass('active')
+        })
+
         var HomeHead = new Swiper ('.swiper-container-head', {
             slidesPerView: 'auto',
             loop: true,
@@ -193,6 +198,7 @@
             var div = $(".header__interface-items"); 
             if (!div.is(e.target) && div.has(e.target).length === 0) { 
               $(".header-like").slideUp(300); 
+              $(".header__interface-item").remoteClass('active')
             }
         })
 
@@ -220,6 +226,7 @@
             $('.header-like').slideToggle(300)
             $('.header-pay').slideUp(0)
             $('.header-user').slideUp(0)
+            $(this).toggleClass('active')
         })
 
         $('.pay').on('click', function (e){
@@ -227,6 +234,7 @@
             $('.header-pay').slideToggle(300)
             $('.header-like').slideUp(0)
             $('.header-user').slideUp(0)
+            $(this).toggleClass('active')
         })
 
         $('.user').on('click', function (e){
@@ -234,6 +242,7 @@
             $('.header-user').slideToggle(300)
             $('.header-like').slideUp(0)
             $('.header-pay').slideUp(0)
+            $(this).toggleClass('active')
         })
 
         $('.btn-gen_1').on('click', function (e){

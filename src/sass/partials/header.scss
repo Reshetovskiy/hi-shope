@@ -135,8 +135,46 @@
         }
         &-item {
             margin-right: 19px;
+            color: transparent;
+            font-size: initial;
+            svg {
+                font-size: initial;
+                stroke: #6A6A6A;
+                width: 20px;
+                height: 20px;
+                stroke-width: 8;
+            }
+            .icon-svg-search {
+                stroke-width: 0;
+                fill: #6A6A6A;
+            }
+            &.like {
+                svg {
+                    stroke-width: 3;
+                }
+            }
+            &.pay {
+                svg {
+                    fill: #6A6A6A;
+                    stroke-width: 0;
+                }
+            }
             &:last-child {
                 margin-right: 0;
+            }
+            &:hover {
+                color: transparent;
+            }
+            &.active {
+                svg {
+                    stroke: $general;
+                }
+                .icon-svg-basket {
+                    fill: $general;
+                }
+                .icon-svg-search {
+                    fill: $general;
+                }
             }
         }
         button {

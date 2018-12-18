@@ -119,6 +119,23 @@
                 top: 5px;
                 right: 8px;
                 opacity: 0;
+                color: transparent;
+                font-size: initial;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    stroke-width: 3;
+                    stroke: #6A6A6A;
+                }
+                &:hover {
+                    color: transparent;
+                }
+                &.active {
+                    svg {
+                        stroke: $general;
+                        fill: $general;
+                    }
+                }
             }
             .swiper-container-middle {
                 width: 1000px;
