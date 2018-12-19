@@ -137,10 +137,10 @@
         </div>
         <div class="header__interface">
             <div class="header__interface-items">
-                <a href="#" class="header__interface-item user">
+                <a href="#" class="header__interface-item user" data-btn="user">
                     @@include('mixins/svg-icon.html', {"name": "user", "class": ""})
                 </a>
-                <div class="header-user">
+                <div class="header-tabs header-user">
                     <div class="header-modal">
                         <div class="header-modal__wrapper">
                             <form action="#">
@@ -164,10 +164,10 @@
                         </div>
                     </div>
                 </div>
-                <button class="header__interface-item like">
+                <button class="header__interface-item like" data-btn="like">
                     @@include('mixins/svg-icon.html', {"name": "like", "class": ""})
                 </button>
-                <div class="header-like">
+                <div class="header-tabs header-like">
                     <div class="header-modal">
                         <div class="header-modal__wrapper">
                             <div class="header-modal__head">
@@ -194,10 +194,10 @@
                         </div>
                     </div>
                 </div>
-                <button class="header__interface-item pay">
+                <button class="header__interface-item pay" data-btn="pay">
                     @@include('mixins/svg-icon.html', {"name": "basket", "class": ""})
                 </button>
-                <div class="header-pay">
+                <div class="header-tabs header-pay">
                     <div class="header-modal">
                         <div class="header-modal__wrapper">
                             <div class="header-modal__head">
@@ -228,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="header__interface-item">
+                <button class="header__interface-item search" data-btn="search">
                     @@include('mixins/svg-icon.html', {"name": "search", "class": ""})
                 </button>
             </div>

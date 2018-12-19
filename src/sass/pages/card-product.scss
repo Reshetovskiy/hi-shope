@@ -14,10 +14,20 @@
         margin-bottom: 89px;
         &-left {
             position: relative;
-            .like-card {
+            svg {
                 position: absolute;
                 top: 0;
                 right: 0;
+                stroke: #6A6A6A;
+                width: 30px;
+                height: 30px;
+                color: transparent;
+                stroke-width: 3;
+                cursor: pointer;
+                &.active {
+                    stroke: $general;
+                    fill: $general;
+                }
             }
         }
         &-right {
