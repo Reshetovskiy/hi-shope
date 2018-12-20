@@ -129,6 +129,9 @@
                 }
                 &:hover {
                     color: transparent;
+                    svg {
+                        stroke: $general;
+                    }
                 }
                 &.active {
                     svg {

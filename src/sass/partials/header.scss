@@ -137,7 +137,20 @@
             margin-right: 19px;
             color: transparent;
             font-size: initial;
+            transition: 0.3s;
+            &:hover {
+                svg {
+                    stroke: $general;
+                }
+                .icon-svg-basket {
+                    fill: $general;
+                }
+                .icon-svg-search {
+                    fill: $general;
+                }
+            }
             svg {
+                transition: 0.3s;
                 font-size: initial;
                 stroke: #6A6A6A;
                 width: 20px;
@@ -147,6 +160,9 @@
             .icon-svg-search {
                 stroke-width: 0;
                 fill: #6A6A6A;
+            }
+            .icon-svg-basket-act, .icon-svg-search-act {
+                display: none;
             }
             &.like {
                 svg {
@@ -168,12 +184,27 @@
             &.active {
                 svg {
                     stroke: $general;
+                    fill: $general;
                 }
                 .icon-svg-basket {
                     fill: $general;
                 }
+                .icon-svg-basket, .icon-svg-search {
+                    display: none;
+                }
                 .icon-svg-search {
                     fill: $general;
+                }
+                .icon-svg-basket-act {
+                    display: block;
+                    position: relative;
+                    top: -3px;
+                }
+                .icon-svg-search-act {
+                    display: block;
+                    stroke-width: 1px;
+                    position: relative;
+                    top: -3px;
                 }
             }
         }

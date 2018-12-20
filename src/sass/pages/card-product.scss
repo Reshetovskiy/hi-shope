@@ -28,6 +28,9 @@
                     stroke: $general;
                     fill: $general;
                 }
+                &:hover {
+                    stroke: $general;
+                }
             }
         }
         &-right {

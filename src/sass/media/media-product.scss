@@ -59,6 +59,9 @@
 }
 
 @media #{$xs} {
+    .nav-menu {
+        display: none;
+    }
     .product {
         .mobile-filter {
             display: block;
