@@ -132,6 +132,9 @@
             display: flex;
             align-items: center;
             position: relative;
+            &.posit {
+                position: initial;
+            }
         }
         &-item {
             margin-right: 19px;
@@ -347,6 +350,91 @@
                         color: #B7B7B7;
                         font-family: 'Roboto Light';
                     }
+                }
+            }
+        }
+    }
+}
+.gray-block {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 11;
+}
+
+.header-search {
+    // display: none;
+    // position: absolute;
+    // width: 100%;
+    // top: 0;
+    // left: 0;
+    // height: 100%;
+    // background: rgba(0, 0, 0, 0.75);
+    // z-index: 11;
+    &__wrapper {
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1066px;
+        margin: 0 auto;
+        z-index: 12;
+        top: 142px;
+    }
+    &__head {
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 68px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0 27px 0 33px;
+        input {
+            width: 693px;
+            height: 51px;
+            font-size: 20px;
+            color: #9A9A9A;
+            font-family: 'Open Sans';
+            padding-left: 25px;
+            &::placeholder {
+                font-size: 20px;
+                font-family: 'Open Sans';
+                color: #9A9A9A;
+            }
+        }
+        button {
+            width: 295px;
+            height: 52px;
+            font-size: 20px;
+            left: -6px;
+            position: relative;
+            background-color: $general;
+        }
+    }
+    &__bottom {
+        background: #FFFFFF;
+        width: 100%;
+        padding-top: 24px;
+        padding-bottom: 58px;
+        &-name {
+            color: #6A6A6A;
+            font-size: 24px;
+            font-family: 'Open Sans';
+            text-align: center;
+            padding-bottom: 34px;
+        }
+        &-blocks {
+            display: flex;
+            justify-content: center;
+            .home-content__head-block {
+                margin-right: 10px;
+                &:nth-child(4n) {
+                    margin-right: 0;
                 }
             }
         }

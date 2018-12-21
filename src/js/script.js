@@ -132,13 +132,36 @@
             $(id).slideDown(300); 
         })
 
+       
+
+
         $(document).on('click', function (e){ 
             var div = $(".header__interface-items"); 
             if (!div.is(e.target) && div.has(e.target).length === 0) { 
-                $(".header-tabs").slideUp(300); 
+                $(".header-tabs").slideUp(1); 
                 $(".header__interface-item").removeClass("active");
             }
         })
+
+        $('.search').on('click', function(){
+            $('.gray-block').slideDown()
+            $('.header__interface-items').addClass('posit')
+
+        })
+
+        $('.gray-block').on('click', function(){
+            
+            $('.search').removeClass('active')
+            $('.header__interface-items').removeClass('posit')
+            $(this).slideUp(100)
+        })
+
+        // $(document).on('click', function (e){ 
+        //     var div1 = $(".header-search__wrapper"); 
+        //     if (!div1.is(e.target) && div1.has(e.target).length === 0) { 
+        //         $(".header-search").slideUp(300); 
+        //     }
+        // })
 
         $('.product-filter').on('click', '.product-filter__name', function () {
             $(this).parent().children('.product-filter__block-repeat').slideToggle(300);

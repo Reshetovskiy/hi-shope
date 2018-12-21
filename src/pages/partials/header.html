@@ -232,6 +232,23 @@
                         </div>
                     </div>
                 </div>
+                <div class=" header-tabs header-search__wrapper header-search">
+                    <div class="header-search__head">
+                        <form action="#">
+                            <input type="text" class="input" placeholder="Название товара">
+                            <button class="btn-gen">Поиск</button>
+                        </form>
+                    </div>
+                    <div class="header-search__bottom">
+                        <div class="header-search__bottom-name">Результаты поиска</div>
+                        <div class="header-search__bottom-blocks">
+                            <!--=include ./gen-block.html -->
+                            <!--=include ./gen-block-active.html -->
+                            <!--=include ./gen-block.html -->
+                            <!--=include ./gen-block-active.html -->
+                        </div>
+                    </div>
+                </div>
                 <button class="header__interface-item search" data-btn="search">
                     @@include('mixins/svg-icon.html', {"name": "search", "class": ""})
                     <span class="open-menu">
@@ -242,3 +259,7 @@
         </div>
     </div>
 </header>
+
+<div class="gray-block">
+</div>
+
