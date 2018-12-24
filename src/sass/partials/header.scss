@@ -12,6 +12,10 @@
     }
     &__logo {
         margin-right: 42px;
+        img {
+            width: 131px;
+            object-fit: cover;
+        }
     }
     &__navbar {
         margin-right: 12px;

@@ -1,8 +1,11 @@
 (function ($) {
     'use strict'
-
+    
     $(document).ready(function () {
         svg4everybody({})
+        /* Javascript */
+        $('.rating').rating();
+
 
         $('.home-content__head-like').on('click', function(e){
             e.preventDefault()
@@ -208,6 +211,6 @@
         });
 
     })
-
+    //=require partials/maps.js
     //=require partials/plugins.js
 })(jQuery)

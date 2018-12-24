@@ -1,0 +1,51 @@
+.map  {
+    height: 400px;
+}
+.wrapper-map-content {
+    display: flex;
+    width: 1072px;
+    margin: 0 auto;
+    &__left {
+        // margin-right: 93px;
+        .adress-wrapper {
+            width: 295px;
+            &__uni {
+               margin-bottom: 10px;
+            }
+        }
+    }
+    &__right {
+        .communication {
+
+            &__input-block {
+                margin-top: 10px;
+                display: flex;
+                .input-block__left {
+                    display: block;
+                    .input {
+                        width: 338px;
+                        margin-bottom: 14px;
+                    }
+                }
+                .input-block__right {
+                    .input {
+                        width: 355px;
+                        height: 181px;
+                    }
+                }
+            }
+            &__bottom-block {
+                label {
+                    .label {
+                        font-size: 14px;
+                        font-family: 'Roboto-Light';
+                    }
+                }
+                .btn-gen {
+                    width: 683px;
+                    height: 51px;
+                }
+            }
+        }
+    }
+}
