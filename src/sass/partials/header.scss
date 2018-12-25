@@ -137,7 +137,7 @@
             align-items: center;
             position: relative;
             &.posit {
-                position: initial;
+                position: static;
             }
         }
         &-item {
@@ -359,7 +359,7 @@
         }
     }
 }
-.gray-block {
+.header__gray-block {
     display: none;
     position: absolute;
     width: 100%;
