@@ -288,9 +288,14 @@
             margin: 20px 0 40px 0
         }
         .swiper-container {
-            .swiper-slide {
-                width: 240px;
-            }
+            .swiper-wrapper {
+                width: 933px;
+                .swiper-slide {
+                    width: 240px;
+                    margin-left: 33px;
+                    margin-right: 33px;
+                }
+             }
         }
         .swiper-button-prev {
             transform: scale(1.4);
