@@ -37,6 +37,8 @@
                     .row-link {
                         display: flex;
                         flex-direction: column;
+                        max-width: 383px;
+                        width: 100%;
                         &__text {
                             font-family: 'Open Sans';
                             font-size: 18px;
@@ -104,6 +106,7 @@
                         height: 35px;
                         font-family: 'Roboto Light';
                         font-size: 14px;
+                        padding: 6px 19px;
                     }
                     textarea {
                         width: 620px;

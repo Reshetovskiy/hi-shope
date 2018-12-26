@@ -40,8 +40,11 @@
                 width: 100%;
                 .list {
                     .list__item {
+                        .row-link {
+                            max-width: 100%;
+                        }
                         .hide {
-                            width: 382px;
+                            width: 100%;
                         }
                     }
                 }

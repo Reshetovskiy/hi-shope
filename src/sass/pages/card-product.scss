@@ -50,6 +50,9 @@
                         width: 100px;
                         height: auto;
                         overflow: initial;
+                        text-decoration: none;
+                        font-family: 'Roboto Light';
+                        color: #6A6A6A;
                     }
                 }
             }
@@ -88,6 +91,44 @@
             margin-bottom: 20px;
             img {
                 margin-right: 4px;
+            }
+            .rating {
+                display: flex;
+                justify-content: flex-start;
+                .stars {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 13px;
+                    .star {
+                        background-position: left -39px;
+                        opacity: .3;
+                        &:nth-child(5) {
+                            margin-right: 0;
+                        }
+                        &:nth-child(6) {
+                            display: none;
+                        }
+                        &:nth-child(7) {
+                            display: none;
+                        }
+                        &:nth-child(8) {
+                            display: none;
+                        }
+                        &:nth-child(9) {
+                            display: none;
+                        }
+                        &:nth-child(10) {
+                            display: none;
+                        }
+                        &.tmp_fs {
+                            opacity: 1;
+                        }
+                        &.fullStar {
+                            background-position: left -39px;
+                            opacity: 1;
+                        }
+                    }
+                }
             }
         }
         &-name {
@@ -288,7 +329,41 @@
                     width: 27px;
                     height: 27px;
                 }
+                .rating {
+                    .stars {
+                        .star {
+                            background-position: left -39px;
+                            opacity: .3;
+                            &:nth-child(5) {
+                                margin-right: 0;
+                            }
+                            &:nth-child(6) {
+                                display: none;
+                            }
+                            &:nth-child(7) {
+                                display: none;
+                            }
+                            &:nth-child(8) {
+                                display: none;
+                            }
+                            &:nth-child(9) {
+                                display: none;
+                            }
+                            &:nth-child(10) {
+                                display: none;
+                            }
+                            &.tmp_fs {
+                                opacity: 1;
+                            }
+                            &.fullStar {
+                                background-position: left -39px;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
             }
+
         }
         .rating-bottom {
             &__text {
@@ -304,6 +379,42 @@
         img {
             margin-right: 10px;
         }
+        .rating {
+            .stars {
+                display: flex;
+                justify-content: center;
+                margin-top: 13px;
+                .star {
+                    background-position: left -39px;
+                    opacity: .3;
+                    &:nth-child(5) {
+                        margin-right: 0;
+                    }
+                    &:nth-child(6) {
+                        display: none;
+                    }
+                    &:nth-child(7) {
+                        display: none;
+                    }
+                    &:nth-child(8) {
+                        display: none;
+                    }
+                    &:nth-child(9) {
+                        display: none;
+                    }
+                    &:nth-child(10) {
+                        display: none;
+                    }
+                    &.tmp_fs {
+                        opacity: 1;
+                    }
+                    &.fullStar {
+                        background-position: left -39px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
     &__tab-reviews {
         margin-bottom: 11px;
@@ -314,10 +425,47 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        position: relative;
         .card-product__tab-block {
             position: initial;
             img {
                 margin-right: 3px;
+            }
+            .rating {
+                .stars {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 13px;
+                    .star {
+                        background-position: left -39px;
+                        opacity: .3;
+                        &:nth-child(5) {
+                            margin-right: 0;
+                        }
+                        &:nth-child(6) {
+                            display: none;
+                        }
+                        &:nth-child(7) {
+                            display: none;
+                        }
+                        &:nth-child(8) {
+                            display: none;
+                        }
+                        &:nth-child(9) {
+                            display: none;
+                        }
+                        &:nth-child(10) {
+                            display: none;
+                        }
+                        &.tmp_fs {
+                            opacity: 1;
+                        }
+                        &.fullStar {
+                            background-position: left -39px;
+                            opacity: 1;
+                        }
+                    }
+                }
             }
         }
         h6 {

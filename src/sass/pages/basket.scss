@@ -29,6 +29,7 @@
                 .input {
                     width: 275px;
                     height: 32px;
+                    padding: 6px 19px;
                 }
                 .btn-gen {
                     width: 162px;
@@ -61,6 +62,7 @@
                         .input {
                             width: 152px;
                             height: 35px;
+                            padding: 6px 19px;
                         }
                         &__name {
                             font-family: 'Roboto Light';
@@ -286,9 +288,14 @@
             margin: 20px 0 40px 0
         }
         .swiper-container {
-            .swiper-slide {
-                width: 240px;
-            }
+            .swiper-wrapper {
+                width: 933px;
+                .swiper-slide {
+                    width: 240px;
+                    margin-left: 33px;
+                    margin-right: 33px;
+                }
+             }
         }
         .swiper-button-prev {
             transform: scale(1.4);
@@ -411,6 +418,7 @@
                     height: 35px;
                     padding: 5px;
                     text-align: center;
+                    padding: 6px 19px;
                 }
                 &-mobile {
                     display: none;

@@ -18,6 +18,7 @@
                 margin-top: 13px;
                 display: flex;
                 flex-wrap: wrap;
+                max-width: 100%;
                 .home-content__head-block {
                     max-width: 225px;
                     margin-right: 8px;
@@ -162,6 +163,7 @@
                 margin-top: wxs(6);
                 display: flex;
                 flex-wrap: wrap;
+                max-width: 100%;
                 .home-content {
                     &__head-block {
                         max-width: wxs(149);
