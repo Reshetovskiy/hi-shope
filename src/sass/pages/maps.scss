@@ -1,5 +1,23 @@
 .map  {
     height: 609px;
+    #google-container {
+        height: 100%;
+        .gmnoprint {
+            display: none;
+        }
+        .gm-style-cc {
+            display: none;
+        }
+        a {
+            display: none !important;
+        }
+    }
+    // div {
+    //     img {
+    //         width: 50px!important;
+    //         height: 50px!important;
+    //     }
+    // }
 }
 .wrapper-map-content {
     font-family: 'Roboto-Regular';
