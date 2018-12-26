@@ -20,7 +20,7 @@
     // }
 }
 .wrapper-map-content {
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto Regular';
     display: flex;
     width: 1072px;
     margin: 65px auto 0 auto;
@@ -54,6 +54,7 @@
                 .input-block__left {
                     display: block;
                     .input {
+                        height: 51px;
                         width: 338px;
                         margin-bottom: 14px;
                     }
@@ -71,7 +72,7 @@
                 label {
                     .label {
                         font-size: 14px;
-                        font-family: 'Roboto-Light';
+                        font-family: 'Roboto Light';
                     }
                 }
                 .btn-gen {
