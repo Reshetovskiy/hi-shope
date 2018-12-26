@@ -5,7 +5,7 @@
 
 //     var style= [
 //     {
-//         "featureType": "all",
+//         "featureTypegit ": "all",
 //         "elementType": "labels.text.fill",
 //         "stylers": [
 //             {

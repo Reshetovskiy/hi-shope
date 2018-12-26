@@ -2,6 +2,7 @@
     height: 609px;
 }
 .wrapper-map-content {
+    font-family: 'Roboto-Regular';
     display: flex;
     width: 1072px;
     margin: 65px auto 0 auto;
@@ -40,6 +41,7 @@
                     }
                 }
                 .input-block__right {
+                    margin-left: 12px;
                     .input {
                         width: 355px;
                         height: 181px;
