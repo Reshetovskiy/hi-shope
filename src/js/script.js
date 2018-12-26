@@ -211,6 +211,13 @@
             dropdownCssClass: 'select-basket-dropdown',
         });
 
+        $('#custom').raty({
+            scoreName:  'entity.score',
+            number: 5,
+            starOff: 'img/star-off.png',                              // Name of the star image off.
+            starOn: '/img/star-on.png'    
+        })
+
     })
     //=require partials/maps.js
     //=require partials/plugins.js
