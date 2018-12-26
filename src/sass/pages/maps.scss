@@ -1,24 +1,36 @@
 .map  {
-    height: 400px;
+    height: 609px;
 }
 .wrapper-map-content {
     display: flex;
     width: 1072px;
-    margin: 0 auto;
+    margin: 65px auto 0 auto;
     &__left {
+        margin-right: 93px;
+        width: 295px;
         // margin-right: 93px;
+        .address-title {
+            font-size: 24px;
+            margin-bottom: 35px;
+        }
         .adress-wrapper {
             width: 295px;
             &__uni {
+                font-size: 18px;
                margin-bottom: 10px;
             }
         }
     }
     &__right {
+        width: 683px;
+        margin-bottom: 450px;
         .communication {
-
+            &__title {
+                font-size: 24px;
+                margin-bottom: 35px;
+            }
             &__input-block {
-                margin-top: 10px;
+                margin-top: 15px;
                 display: flex;
                 .input-block__left {
                     display: block;
@@ -35,6 +47,7 @@
                 }
             }
             &__bottom-block {
+                margin-top: 20px;
                 label {
                     .label {
                         font-size: 14px;
@@ -42,6 +55,7 @@
                     }
                 }
                 .btn-gen {
+                    margin-top: 70px;
                     width: 683px;
                     height: 51px;
                 }

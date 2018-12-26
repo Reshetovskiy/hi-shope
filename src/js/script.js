@@ -65,7 +65,7 @@
            
             slidesPerView: 'auto',
             dynamicMainBullets: 3,
-            slidesPerView: 3,
+            // slidesPerView: 3,
             pagination: {
               el: '.swiper-pagination-bottom',
               clickable: true

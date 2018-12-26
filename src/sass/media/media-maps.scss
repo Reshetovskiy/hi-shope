@@ -1,0 +1,87 @@
+@media #{$sm} {  
+    .wrapper-map-content {
+        display: block;
+        width: 100%;
+        padding-left: 35px;
+        &__left {
+            width: 100%;
+            .adress-wrapper {
+                display: flex;
+                width: 100%;
+                .other-block {
+                    margin-left: 100px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        &__right {
+            margin-top: 140px;
+            .communication {
+                &__input-block {
+                    .input-block-left {
+                        .input {
+                            width: 228px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                .input-block__right {
+                    margin-left:  12px;
+                }
+            }
+            &__bottom-block {
+                .btn-gen {
+                    margin-top: 23px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+}
+@media #{$xs} {  
+    .wrapper-map-content {
+        width: 100%;
+        padding-left: 17px;
+        padding-right: 17px;
+        &__left {
+            width: 285px;
+            margin: 0 auto;
+            .adress-wrapper {
+                display: block;
+                .other-block {
+                    margin-left: 0;
+                }
+            }
+        }
+        &__right {
+            width: 285px;
+            margin: 52px  auto 100px auto;
+            .communication {
+                &__input-block {
+                    display: block;
+                    .input-block__left {
+                        display: flex;
+                        flex-direction: column;
+                        .input {
+                            width: 285px;
+                        }
+                    }
+                    .input-block__right {
+                        margin-left: 0;
+                        .input {
+                            width: 285px;
+                        }
+                    }
+                }
+                &__bottom-block {
+                    .btn-gen {
+                        width: 290px;
+                    }
+                }
+            }
+        }
+     }
+
+}

@@ -12,11 +12,15 @@
            <div class="wrapper-map-content__left">
                 <h2 class="address-title">Адрес</h2>
                 <div class="adress-wrapper">
-                    <p class="adress-wrapper__uni">Россия, Москва</p>
-                    <p class="adress-wrapper__uni">Кронштадский бульвар, д. 14с3</p>
-                    <p class="adress-wrapper__uni">Метро Водный стадион </p>
-                    <p class="adress-wrapper__uni">Тел.: Адрес: +7 (499) 506-72-11 </p>
-                    <p class="adress-wrapper__uni">Часы работы: 10:00-18:30</p>
+                    <div class="other-block">
+                        <p class="adress-wrapper__uni">Россия, Москва</p>
+                        <p class="adress-wrapper__uni">Кронштадский бульвар, д. 14с3</p>
+                        <p class="adress-wrapper__uni">Метро Водный стадион </p>
+                    </div>
+                    <div class="other-block">
+                        <p class="adress-wrapper__uni">Тел.: Адрес: +7 (499) 506-72-11 </p>
+                        <p class="adress-wrapper__uni">Часы работы: 10:00-18:30</p>
+                    </div>
                 </div>
            </div>
            <div class="wrapper-map-content__right">
@@ -43,13 +47,18 @@
                             <span class="checkbox-custom"></span>
                             <span class="label"> Я согласен на обработку предоставленных мною данных</span>
                         </label>
+                        <label>
+                                <input class="checkbox" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label"> Я согласен на обработку предоставленных мною данных</span>
+                            </label>
                         <button class="btn-gen">Отправить </button>
                     </div>
                 </div>
            </div>
        </div>
-    <!--=include partials/footer.html -->
+
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQBOSPWHZurJzKWPfQsSZe9PA8WX_aFm4=initMap">
   </script>
 <!--=include partials/layouts/end.html -->
