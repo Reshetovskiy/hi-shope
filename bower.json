@@ -13,9 +13,6 @@
     "svg4everybody": "jonathantneal/svg4everybody#^2.1.9",
     "select2": "^4.0.5",
     "bootstrap": "4.0",
-    "raty": "jquery-raty#^2.8.0",
-    "jquery.rateit": "^1.1.1",
-    "rateyo": "^2.3.4",
     "jquery-star-rating": "*"
   },
   "ignore": [
