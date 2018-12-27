@@ -30,7 +30,8 @@
             &__right {
                 .top-block-right {
                     // margin-top: 30px;
-                    margin-top: 15px;
+                    width: 95%;
+                    margin: 15px auto 0;
                     .input-block {
                         .input-group {
                             .input {
@@ -45,10 +46,8 @@
                     
                     &__top-line {
                         margin-top: 5px;
-                        padding-bottom: 7px;
-                        
+                        padding: 13px 10px 7px 10px;
                         .form-group_select {
-                            border: 1px solid #CDCDCD;
                             border-radius: 5px;
                         }
                     }
@@ -93,8 +92,15 @@
                 margin-top: 0px;
             }
             .swiper-container-recomendation {
-                width: 61%;
-                padding-left: 20px;
+                width: 533px;
+                padding-left: 3px;
+                .swiper-wrapper {
+                    width: 533px;
+                    .swiper-slide {
+                        margin-right: 20px;
+                        margin-left: 0;
+                    }
+                }
             }
             .swiper-button-next  {
                 right: 90px;
@@ -196,6 +202,7 @@
                      display: block;
                      border: 1px solid #ECECEC;
                      margin: 15px auto 0 auto;
+                     width: 100%;
                      .name-input-block__wrapper {
                         
                      }
@@ -247,6 +254,7 @@
                     padding: 13px 17px 0px 17px;
                     margin-bottom: 15px;
                     padding-bottom: 10px;
+                    width: 100%;
                     &__top-line {
                         padding: 0;
                         display: flex;
@@ -255,6 +263,10 @@
                         .delivery-title {
                             font-size: 16px;
                             font-family: 'Roboto Regular';
+                        }
+                        .form-group_select {
+                            width: 100%;
+                            border: 1px solid #CDCDCD;
                         }
                     }
                     .select2  {
@@ -335,6 +347,7 @@
                     }
                 }
                 .bottom-block-right {
+                    width: 100%;
                     border: 1px solid #ECECEC;
                     &__top-line {
                         padding: 10px 17px 10px 17px; 
@@ -349,7 +362,7 @@
                             font-family: 'Roboto Regular';
                         }
                         .form-group_select {
-                            width: 284px;
+                            width: 100%;
                             margin: 0 auto;
                             border: 1px solid #CDCDCD;
                             border-radius: 5px;

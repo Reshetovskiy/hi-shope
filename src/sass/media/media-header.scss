@@ -47,6 +47,18 @@
                 margin-right: wsm(19);
             }
         }
+        &.active {
+            .header__navbar {
+                .header__navbar-items {
+                    li {
+                        padding-right: wsm(26.5);
+                        &:last-child {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
     }
     .header-pay, .header-user, .header-like {
         top: 49px;
@@ -294,6 +306,9 @@
                 }
                 &:nth-child(5) {
                     margin-right: 0;
+                }
+                .number {
+                    display: none;
                 }
             }
             &-items {

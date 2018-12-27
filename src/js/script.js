@@ -162,12 +162,6 @@
             $(this).slideUp(100)
         })
 
-        // $(document).on('click', function (e){ 
-        //     var div1 = $(".header-search__wrapper"); 
-        //     if (!div1.is(e.target) && div1.has(e.target).length === 0) { 
-        //         $(".header-search").slideUp(300); 
-        //     }
-        // })
 
         $('.product-filter').on('click', '.product-filter__name', function () {
             $(this).parent().children('.product-filter__block-repeat').slideToggle(300);
@@ -210,14 +204,11 @@
         $('.select-basket').select2({
             dropdownCssClass: 'select-basket-dropdown',
         });
+        
 
-        $('#custom').raty({
-            scoreName:  'entity.score',
-            number: 5,
-            starOff: 'img/star-off.png',                              // Name of the star image off.
-            starOn: '/img/star-on.png'    
+        $('.cookies .button-close').on('click', function(){
+            $('.cookies').slideUp(300)
         })
-
     })
     //=require partials/maps.js
     //=require partials/plugins.js

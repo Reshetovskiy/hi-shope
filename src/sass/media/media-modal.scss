@@ -20,4 +20,36 @@
             }
         }
     }
+    .cookies {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+        &__wrapper {
+            padding: 21px 10px;
+            position: relative;
+            background: #E3E3E3;
+            width: 320px;
+            min-height: 137px;
+            a {
+                color: #000000;
+                font-family: 'Roboto Regular';
+            }
+            button {
+                background-color: transparent;
+                border: 0;
+                right: 13px;
+                position: absolute;
+                top: 4px;
+            }
+        }
+        &__text {
+            font-size: 12px;
+            text-align: center;
+            font-family: 'Roboto Light';
+            line-height: 23px;
+            color: #000000;
+        }
+    } 
 }
