@@ -207,9 +207,22 @@
         
 
         $('.cookies .button-close').on('click', function(){
-            $('.cookies').slideUp(300)
+            $('.cookies').slideUp(300);
+            document.cookie = "window=1";
         })
+
+        if(!getCookie("window")) { $('.cookies').slideDown(300); }
+
+        
     })
+
+    function getCookie(name) {
+        var matches = document.cookie.match(new RegExp(
+          "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
     //=require partials/maps.js
     //=require partials/plugins.js
 })(jQuery)
