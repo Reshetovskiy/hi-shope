@@ -223,6 +223,17 @@
         return matches ? decodeURIComponent(matches[1]) : undefined;
     }
 
+
+    $('#card-textarea').on("input", function(){
+        var maxlength = $(this).attr("maxlength");
+        var currentLength = $(this).val().length;
+    
+        if( currentLength >= maxlength ){
+        } else {
+            $('#card-number').html(currentLength)
+        }
+    });
+
     //=require partials/maps.js
     //=require partials/plugins.js
 })(jQuery)
