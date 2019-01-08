@@ -13,8 +13,7 @@
     "svg4everybody": "jonathantneal/svg4everybody#^2.1.9",
     "select2": "^4.0.5",
     "bootstrap": "4.0",
-    "jquery-star-rating": "*",
-    "jquery-validation": "^1.19.0"
+    "jquery-star-rating": "*"
   },
   "ignore": [
     "**/.*",
