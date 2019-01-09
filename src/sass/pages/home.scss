@@ -3,7 +3,9 @@
         img {
             height: 567px;
             width: 100%;
-            object-fit: cover;
+            &.mobile {
+                display: none;
+            }
         }
         button {
             background-color: green;
