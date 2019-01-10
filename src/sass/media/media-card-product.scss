@@ -254,6 +254,9 @@
         }
         .card-product__rating {
             order: 2;
+            .rating-top {
+                justify-content: center;
+            }
         }
         .block-button {
             order: 3;
