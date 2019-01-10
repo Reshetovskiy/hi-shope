@@ -1,9 +1,11 @@
 @media #{$sm} {
     .home {
         &__head {
-            img {
-                height:  wsm(401);
-            }
+            a {
+                div {
+                    height:  wsm(401);
+                }
+            } 
             button {
                 border-radius: 3px;
                 font-size: 17px;
@@ -201,16 +203,18 @@
 @media #{$xs} {
     .home {
         &__head {
-            img {
+            a {
+                div {
                 height: 468px;
-                &.mobile {
-                    display: block;
-                    object-fit: cover;
+                    &.mobile {
+                        display: block;
+                        object-fit: cover;
+                    }
+                    &.dekstop {
+                        display: none;
+                    }
                 }
-                &.dekstop {
-                    display: none;
-                }
-            }
+            } 
             button {
                 border-radius: 3px;
                 font-size: 17px;

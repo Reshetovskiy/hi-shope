@@ -1,13 +1,19 @@
 .home {
     &__head {
-        img {
-            height: 567px;
-            width: 100%;
-            object-fit: cover;
-            &.mobile {
-                display: none;
+        a {
+            display: block;
+            div {
+                height: 567px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                &.dekstop {
+                    background-size: cover;
+                }
+                &.mobile {
+                    display: none;
+                }
             }
-        }
+        } 
         button {
             background-color: green;
             border-radius: 3px;
