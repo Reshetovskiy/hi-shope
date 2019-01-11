@@ -1,16 +1,16 @@
 @media #{$sm} {
     .home {
         &__head { 
-            a {
-                img {
-                    &.dekstop, &.mobile {
-                        display: none;
-                    }
-                    &.tablet {
-                        display: block;
-                    }
-                }
-            }
+            // a {
+            //     img {
+            //         &.dekstop, &.mobile {
+            //             display: none;
+            //         }
+            //         &.tablet {
+            //             display: block;
+            //         }
+            //     }
+            // }
             button {
                 border-radius: 3px;
                 font-size: 17px;
@@ -208,13 +208,13 @@
 @media #{$xs} {
     .home {
         &__head {
-            a {
-                img { 
-                    &.mobile {
-                        display: block; 
-                    }
-                    &.dekstop, &.tablet{
+            a { 
+                img {
+                    &.dekstop, &.mobile {
                         display: none;
+                    }
+                    &.tablet {
+                        display: block;
                     }
                 }
             } 
@@ -423,6 +423,23 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media #{$xs-small} {
+    .home {
+        &__head {
+            a {
+                img { 
+                    &.mobile {
+                        display: block; 
+                    }
+                    &.dekstop, &.tablet{
+                        display: none;
+                    }
+                }
+            } 
         }
     }
 }
