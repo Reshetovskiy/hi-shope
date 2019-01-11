@@ -2,14 +2,14 @@
     &__head {
         a {
             display: block;
-            div {
-                height: 567px;
-                background-size: cover;
-                background-repeat: no-repeat;
-                &.dekstop {
-                    background-size: cover;
-                }
-                &.mobile {
+            img {
+                height: auto;
+                vertical-align: middle; 
+                max-width: 100%;
+                margin: 0 auto; 
+                display: block; 
+                backface-visibility: hidden;
+                &.mobile, &.tablet {
                     display: none;
                 }
             }
