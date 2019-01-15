@@ -45,5 +45,10 @@
     "gulp-useref": "*",
     "gulp-rename": "*",
     "gulp-uglify-es": "*"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify-es": "^1.0.4"
   }
 }
